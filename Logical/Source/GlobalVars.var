@@ -1,0 +1,24 @@
+(*Constants*)
+VAR CONSTANT
+	MAX_SHUTTLE_COUNT : USINT := 8; (*Maximum count of shuttles allowed in the system*)
+	MAX_SHUTTLE_COUNT_ARRAY : USINT := MAX_SHUTTLE_COUNT-1; (*Maximum count of shuttles - 1 (used for array declaration)*)
+	STATION_IS_EMPTY : USINT := 255; (*Index that denotes that a station is empty and available*)
+	NUM_PROCESS_STATIONS : USINT := 2;
+	NUM_PROCESS_STATION_ARRAY : USINT := NUM_PROCESS_STATIONS-1;
+	STATION_1 : USINT := 0;
+	STATION_2 : USINT := 1;
+END_VAR
+(*Global Interfaces*)
+VAR
+	gShuttleIf : ARRAY[0..MAX_SHUTTLE_COUNT_ARRAY] OF ShuttleIfTyp; (*Interface(s) to control shuttles in the system*)
+	gAcp6DCtrlIf : Acp6DCtrlType; (*Interface to control the 6D system as a whole*)
+	gMainIf : MainIfTyp := (Cfg:=(ShuttleCount:=1)); (*Main interface to control the system*)
+	g6DRecoveryIf : Acp6DRecoveryIfTyp; (*Interface to control the recover process*)
+	gProcessInfoIf : ProcessInfoIfTyp; (*Interface to display process related information*)
+	gSceneViewerIf : SceneViewerTyp;
+	gProcessRecipe : ProcessRecipeTyp;
+	gCyclicChlCfgIf : CycChnlCfgIfTyp; (*Interface for the configuration of the cyclic channels*)
+	gDanceDemoIf : DanceDemoIfTyp;
+	gVariousDemoIf : VariousDemoIf;
+	gAntiSloshIf : StationIfTyp;
+END_VAR

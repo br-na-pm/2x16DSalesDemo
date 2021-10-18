@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Commands>
+	<Command id="1">
+		<Parameter Name="MacroClear" MacroID="140"/>
+	</Command>
+    <!-- Start Of Oval-->
+    <Command id="2">
+		<Parameter Name="MoveInPlane" ShuttleID="140" XTarget="0.120" YTarget="0.00" Acc="10" Vel="0.5" EndVel="0.5" PositionMode="1" PathType="0"/>
+	</Command>
+    <Command id="3">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.0" YTarget="0.060" Acc="10" Vel="0.5" EndVel="0.5" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+    <Command id="4">
+		<Parameter Name="MoveInPlane" ShuttleID="140" XTarget="-0.240" YTarget="0.00" Acc="10" Vel="0.5" EndVel="0.5" PositionMode="1" PathType="0"/>
+	</Command>
+    <Command id="5">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.0" YTarget="-0.06" Acc="10" Vel="0.5" EndVel="0.5" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+    <Command id="4">
+		<Parameter Name="MoveInPlane" ShuttleID="140" XTarget="0.240" YTarget="0.00" Acc="10" Vel="0.5" EndVel="0.5" PositionMode="1" PathType="0"/>
+	</Command>
+    <Command id="3">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.0" YTarget="0.060" Acc="10" Vel="0.5" EndVel="0.5" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+    <Command id="4">
+		<Parameter Name="MoveInPlane" ShuttleID="140" XTarget="-0.240" YTarget="0.00" Acc="10" Vel="0.5" EndVel="0.5" PositionMode="1" PathType="0"/>
+	</Command>
+    <Command id="5">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.0" YTarget="-0.06" Acc="10" Vel="0.5" EndVel="0.5" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+    <Command id="4">
+		<Parameter Name="MoveInPlane" ShuttleID="140" XTarget="0.240" YTarget="0.00" Acc="10" Vel="0.5" EndVel="0.5" PositionMode="1" PathType="0"/>
+	</Command>
+    <!-- End Of Oval-->
+    <!-- Start Of Circle-->
+    <!-- CCW-->
+    <Command id="5">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.0" YTarget="0.06" Acc="10" Vel="0.5" EndVel="0.5" PositionMode="1" Angle="6.28318" Direction="1"/>
+	</Command>
+    <Command id="5">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.0" YTarget="0.06" Acc="10" Vel="0.5" EndVel="0.5" PositionMode="1" Angle="6.28318" Direction="1"/>
+	</Command>
+    <Command id="5">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.0" YTarget="0.06" Acc="10" Vel="0.5" EndVel="0" PositionMode="1" Angle="6.28318" Direction="1"/>
+	</Command>
+    <!-- CCW-->
+    <Command id="5">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.0" YTarget="0.06" Acc="10" Vel="0.5" EndVel="0.5" PositionMode="1" Angle="6.28318" Direction="0"/>
+	</Command>
+    <Command id="5">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.0" YTarget="0.06" Acc="10" Vel="0.5" EndVel="0.5" PositionMode="1" Angle="6.28318" Direction="0"/>
+	</Command>
+    <Command id="5">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.0" YTarget="0.06" Acc="10" Vel="0.5" EndVel="0" PositionMode="1" Angle="6.28318" Direction="0"/>
+	</Command>
+	<!-- Move To Center-->
+    <Command id="4">
+		<Parameter Name="MoveInPlane" ShuttleID="140" XTarget="0" YTarget="0.06" Acc="10" Vel="0.5" EndVel="0.0" PositionMode="1" PathType="0"/>
+	</Command>
+    <!-- Spiral -->
+    <Command id="2">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.005" YTarget="0.0" Acc="15" Vel="0.4" EndVel="0.4" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="3">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="-0.010" YTarget="0.0" Acc="15" Vel="0.4" EndVel="0.4" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="4">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.015" YTarget="0.0" Acc="15" Vel="0.4" EndVel="0.4" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="5">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="-0.020" YTarget="0.0" Acc="15" Vel="0.4" EndVel="0.4" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="6">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.025" YTarget="0.0" Acc="15" Vel="0.4" EndVel="0.4" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="7">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="-0.030" YTarget="0.0" Acc="15" Vel="0.4" EndVel="0.4" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="8">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.030" YTarget="0.0" Acc="15" Vel="0.4" EndVel="0.4" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="8">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="-0.030" YTarget="0.0" Acc="15" Vel="0.4" EndVel="0.4" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="9">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.025" YTarget="0.0" Acc="15" Vel="0.4" EndVel="0.4" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="10">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="-0.020" YTarget="0.0" Acc="15" Vel="0.4" EndVel="0.4" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="11">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.015" YTarget="0.0" Acc="15" Vel="0.4" EndVel="0.4" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="12">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="-0.010" YTarget="0.0" Acc="15" Vel="0.4" EndVel="0.4" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="13">
+		<Parameter Name="MoveArcAngle" ShuttleID="140" XTarget="0.005" YTarget="0.0" Acc="15" Vel="0.4" EndVel="0.4" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.0035" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.0005" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.0035" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.0005" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.0035" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.0005" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.0035" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.0005" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.0035" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.0005" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.0035" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.001" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+	<Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.0035" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.001" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+	<Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.0035" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.001" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+	<Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.0035" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.001" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+	<Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.0035" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.001" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+	<Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.0035" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="140" ZTarget="0.001" RXTarget="0" RYTarget ="0" RZTarget="0" VelZ="1.0" PositionMode="0" />
+	</Command>
+    <!-- Move back to repeat-->
+    <Command id="4">
+		<Parameter Name="MoveInPlane" ShuttleID="140" XTarget="-0.12" YTarget="-0.06" Acc="10" Vel="0.5" EndVel="0.0" PositionMode="1" PathType="2"/>
+	</Command>
+    <!-- Repeat-->
+    <Command id="20">
+		<Parameter Name="MacroRun" MacroID="140" ShuttleID="140"/>
+	</Command>
+	<Command id="24">
+		<Parameter Name="MacroSave" MacroID="140"/>
+	</Command>
+</Commands>

@@ -1,0 +1,13 @@
+VAR
+	state : VariousDemoStateEnum;
+	slidePars : SlideUpDownParTyp;
+	mixPars : ARRAY[0..1] OF MixProfileParTyp;
+	Fbs : FbsTyp;
+	delayTime : TIME;
+	weighPars : ARRAY[0..1] OF WeighShuttleParTyp;
+	forcePars : ARRAY[0..1] OF ForceCtrlParTyp;
+	wavePars : WaveParTyp;
+	hmiIf : DemoHmiTyp;
+	landPars : ARRAY[0..1] OF LandParsTyp;
+	genDemoPars : GenDemoParType;
+END_VAR

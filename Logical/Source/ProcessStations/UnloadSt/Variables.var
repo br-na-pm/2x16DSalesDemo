@@ -1,0 +1,7 @@
+VAR
+	state : UnloadStationStateEnum;
+	stationFbs : UnloadStationFbTyp;
+	stationPars : ProcessRecipeLoadTyp;
+	logArgs : ARRAY[0..3] OF UDINT;
+	productLoadType : BOOL;
+END_VAR

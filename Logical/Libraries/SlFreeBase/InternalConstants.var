@@ -1,0 +1,15 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Author: Giovanni Fassina <giovanni.fassina@br-automation.com>
+ * Created: Oct 16, 2018
+ ********************************************************************)
+VAR CONSTANT
+	_sfbNUM_IMP_ZVD : USINT := 3; (*Number of impulses for a ZVD shaper continuos time*)
+	_sfbNUM_IMP_ZVD_DT : USINT := _sfbNUM_IMP_ZVD*2-1; (*Number of impulses of a ZVD shaper discrete time*)
+END_VAR
+(* *)
+VAR CONSTANT
+	_sfbNUM_IMP_ZVDm1 : USINT := _sfbNUM_IMP_ZVD-1;
+	_sfbNUM_IMP_ZVD_DTm1 : USINT := _sfbNUM_IMP_ZVD_DT-1;
+END_VAR

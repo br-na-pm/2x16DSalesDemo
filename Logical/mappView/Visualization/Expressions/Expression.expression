@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExpressionsSet id="TeachingEnableExpressions" xmlns="http://www.br-automation.com/iat2015/expression/engineering/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Expressions>
+		<Expression id="Comment_Exp" xsi:type="content" contentRefId="CITT_TeachPageContent" type="CheckForComment" />
+		<Expression id="Dwell_Exp" xsi:type="content" contentRefId="CITT_TeachPageContent" type="CheckForDwell" />
+		<Expression id="HomeMsgs_Exp" xsi:type="content" contentRefId="CITT_MovePageContent" type="Not" />
+		<Expression id="Joysticks_Exp" xsi:type="content" contentRefId="CITT_MovePageContent" type="And_AndNot" />
+		<Expression id="LoopSelection_Exp" xsi:type="content" contentRefId="CITT_TeachPageContent" type="CheckForLoop" />
+		<Expression id="MCode_Exp" xsi:type="content" contentRefId="CITT_TeachPageContent" type="CheckForIO" />
+		<Expression id="MotionPad_Exp" xsi:type="content" contentRefId="CITT_TeachPageContent" type="DirectRead" />
+		<Expression id="MoveInputs_Exp" xsi:type="content" contentRefId="CITT_TeachPageContent" type="CheckForMovement" />
+		<Expression id="OpenMsg_Exp" xsi:type="content" contentRefId="CITT_TeachPageContent" type="Not" />
+		<Expression id="Open_New_Exp" xsi:type="content" contentRefId="CITT_TeachPageContent" type="Not" />
+		<Expression id="Play_Exp" xsi:type="content" contentRefId="CITT_TeachPageContent" type="AndNot" />
+		<Expression id="Power_Home_Exp" xsi:type="content" contentRefId="CITT_MovePageContent" type="Not" />
+		<Expression id="PowerMsg_Exp" xsi:type="content" contentRefId="CITT_MovePageContent" type="Not" />
+		<Expression id="SaveMsg_Exp" xsi:type="content" contentRefId="CITT_TeachPageContent" type="AndNot" />
+		<Expression id="Save_Write_Exp" xsi:type="content" contentRefId="CITT_TeachPageContent" type="AndNot" />
+		<Expression id="TeachButton_Exp" xsi:type="content" contentRefId="CITT_MovePageContent" type="AndNot" />
+		<Expression id="Validate_Exp" xsi:type="content" contentRefId="CITT_TeachPageContent" type="AndNot" />
+	</Expressions>
+</ExpressionsSet>

@@ -1,0 +1,8 @@
+VAR
+	recipeXmlFb : MpRecipeXml;
+	processRecipeRegParFb : MpRecipeRegPar;
+	pickPlaceCfgRegParFb : MpRecipeRegPar;
+	pickPlaceTuneRegParFb : MpRecipeRegPar;
+	recipeIf : RecipeIfTyp;
+	state : RecipeStatesEnum;
+END_VAR

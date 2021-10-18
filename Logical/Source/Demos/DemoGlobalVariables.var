@@ -1,0 +1,5 @@
+VAR
+	gSyncConoyDemoIf : IndvDanceDemoIfTyp;
+	gDofDemoIf : IndvDanceDemoIfTyp;
+	gRoutingDemoIf : IndvDanceDemoIfTyp;
+END_VAR

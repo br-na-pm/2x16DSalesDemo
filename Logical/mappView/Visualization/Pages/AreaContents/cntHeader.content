@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cntHeader" height="60" width="1280" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.ToggleButton" id="tbPower" top="10" left="10" width="151" height="40" zIndex="0" text="Power" fontSize="16px" style="Contained" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="mpbStop" top="10" left="165" width="151" height="40" zIndex="1" text="Stop" fontSize="16px" style="Contained" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="mpbReset" top="10" left="320" width="151" height="40" zIndex="2" text="Reset" fontSize="16px" style="Contained" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="tb6DPower" top="5" left="1080" width="185" height="24" zIndex="4" text="6D" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(0, 192, 0, 1)" fontSize="14px" fontName="Roboto" padding="0px 5px" checkedBackColor="rgba(0, 192, 0, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="tb6DInError" top="30" left="1080" width="185" height="24" zIndex="3" text="Error" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(255, 0, 0, 1)" fontSize="14px" fontName="Roboto" padding="0px 5px" checkedBackColor="rgba(255, 0, 0, 1)" />
+  </Widgets>
+</Content>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<OpcUaSource FileVersion="7" ArVersion="C4.90">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases>
+      <EngineeringUnit Id="1" UnitId="4933453" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="kilogram" Symbol="kg" />
+      <EngineeringUnit Id="2" UnitId="5723220" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="watt" Symbol="W" />
+      <EngineeringUnit Id="3" UnitId="5067858" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="metre" Symbol="m" />
+      <EngineeringUnit Id="4" UnitId="4405297" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="radian" Symbol="rad" />
+    </EngineeringUnitAliases>
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="gSceneViewerIf" AutomaticEnable="True" />
+        <Variable Name="gMainIf" AutomaticEnable="True" />
+        <Variable Name="gShuttleIf" EnableArrayElements="True">
+          <Variable Name="gShuttleIf[0]">
+            <Variable Name="Sts">
+              <Variable Name="ShuttleInfo">
+                <Variable Name="Position">
+                  <Variable Name="Value">
+                    <Variable Name="X" EngineeringUnitId="3" />
+                    <Variable Name="Y" EngineeringUnitId="3" />
+                    <Variable Name="Z" EngineeringUnitId="3" />
+                    <Variable Name="RX" EngineeringUnitId="4" />
+                    <Variable Name="RY" EngineeringUnitId="4" />
+                    <Variable Name="RZ" EngineeringUnitId="4" />
+                  </Variable>
+                </Variable>
+              </Variable>
+            </Variable>
+          </Variable>
+          <Variable Name="gShuttleIf[1]">
+            <Variable Name="Sts">
+              <Variable Name="ShuttleInfo">
+                <Variable Name="Position">
+                  <Variable Name="Value">
+                    <Variable Name="RZ" EngineeringUnitId="4" />
+                    <Variable Name="RY" EngineeringUnitId="4" />
+                    <Variable Name="RX" EngineeringUnitId="4" />
+                    <Variable Name="X" EngineeringUnitId="3" />
+                    <Variable Name="Y" EngineeringUnitId="3" />
+                    <Variable Name="Z" EngineeringUnitId="3" />
+                  </Variable>
+                </Variable>
+              </Variable>
+            </Variable>
+          </Variable>
+        </Variable>
+        <Variable Name="gProcessInfoIf" AutomaticEnable="True" />
+        <Variable Name="gVariousDemoIf" AutomaticEnable="True" />
+        <Variable Name="gAcp6DCtrlIf">
+          <Variable Name="Sts" AutomaticEnable="True" />
+        </Variable>
+      </GlobalVariables>
+      <Task Name="Vis">
+        <Variable Name="Vis" AutomaticEnable="True">
+          <Variable Name="Shuttles" EnableArrayElements="True" />
+        </Variable>
+      </Task>
+      <Task Name="Main">
+        <Variable Name="state" />
+      </Task>
+      <Task Name="Monitor6D">
+        <Variable Name="SystemStsIf" AutomaticEnable="True">
+          <Variable Name="Sts">
+            <Variable Name="Segments" EnableArrayElements="True" />
+            <Variable Name="System">
+              <Variable Name="Power" EngineeringUnitId="2" />
+            </Variable>
+          </Variable>
+        </Variable>
+      </Task>
+      <Task Name="VarDemos">
+        <Variable Name="hmiIf" AutomaticEnable="True" />
+        <Variable Name="Fbs">
+          <Variable Name="WeighFB" EnableArrayElements="True">
+            <Variable Name="WeighFB[0]">
+              <Variable Name="Weight" EngineeringUnitId="1" />
+            </Variable>
+            <Variable Name="WeighFB[1]">
+              <Variable Name="Weight" EngineeringUnitId="1" />
+            </Variable>
+          </Variable>
+          <Variable Name="ForceCtrlFB" EnableArrayElements="True" />
+          <Variable Name="LandCtrlFb" EnableArrayElements="True" />
+        </Variable>
+        <Variable Name="forcePars" EnableArrayElements="True" />
+      </Task>
+      <Task Name="AntiSlosh">
+        <Variable Name="Pars">
+          <Variable Name="ContainerType" />
+        </Variable>
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

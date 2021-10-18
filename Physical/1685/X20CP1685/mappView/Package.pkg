@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="mappViewControl" PackageType="mappViewControl" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">cntMain.binding</Object>
+    <Object Type="File">Config.mappviewcfg</Object>
+    <Object Type="File">Visualizat.vis</Object>
+    <Object Type="File">OpcUaServer.uaserver</Object>
+    <Object Type="File">cntHeader.binding</Object>
+    <Object Type="File">cntMainEventBinding.eventbinding</Object>
+    <Object Type="File">cntShuttlePositions.binding</Object>
+    <Object Type="File">cntWeighDetail.binding</Object>
+    <Object Type="File">cntForceDetailEventBindings.eventbinding</Object>
+    <Object Type="File">cntLandDetail.binding</Object>
+    <Object Type="File">cntAntiSloshEventBinding.eventbinding</Object>
+    <Object Type="File">cntAntiSloshDetail.binding</Object>
+  </Objects>
+</Package>

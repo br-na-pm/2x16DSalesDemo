@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cntLandDetail" height="535" width="700" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.ToggleButton" id="tbLandLevSh1" top="65" left="29" width="236" height="365" zIndex="0" mouseDownText="Levitate Shuttle 1" text="Land Shuttle 1" fontSize="24px" style="Contained" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="tbLandLevSh2" top="65" left="410" width="236" height="365" zIndex="1" mouseDownText="Levitate Shuttle 2" text="Land Shuttle 2" fontSize="24px" style="Contained" />
+  </Widgets>
+</Content>

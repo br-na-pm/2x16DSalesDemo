@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="ExpressionsPackage" PackageType="ExpressionsPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">ExpressionType.expressiontype</Object>
+    <Object Type="File">Expression.expression</Object>
+    <Object Type="File">140_FillStation2.xml</Object>
+    <Object Type="File">141_FillStation3XY.xml</Object>
+    <Object Type="File">142_FillStation3Wobble.xml</Object>
+    <Object Type="File">143_FillStation4.xml</Object>
+    <Object Type="File">150_RepeatTest.xml</Object>
+    <Object Type="File">160_SyncDemo.xml</Object>
+    <Object Type="File">165_WaveMove.xml</Object>
+    <Object Type="File">166_RxRyDemo.xml</Object>
+    <Object Type="File">170_ConvoyDemo.xml</Object>
+    <Object Type="File">171_OuterLoopRoute.xml</Object>
+    <Object Type="File">172_InnerLoopRoute.xml</Object>
+  </Objects>
+</Package>

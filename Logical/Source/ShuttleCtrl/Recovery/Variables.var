@@ -1,0 +1,5 @@
+VAR
+	state : RecoveryStateEnum;
+	RecoverFbs : RecoveryFbs;
+	i : USINT;
+END_VAR

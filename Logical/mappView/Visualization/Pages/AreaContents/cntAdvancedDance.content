@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cntDanceAdvanced" height="740" width="1130" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.GroupBox" id="gbDanceInterface" top="15" left="325" width="440" height="115" zIndex="0" borderWidth="2px 2px 0px 2px" cornerRadius="3px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="lblDemoIf" top="8" left="93" width="200" zIndex="0" text="Dance Demo Interface" textAlign="center" style="Heading6" />
+        <Widget xsi:type="widgets.brease.PushButton" id="pbResetDanceDemo" top="78" left="12" width="113" height="24" zIndex="7" text="Reset" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="tbRunDanceDemo" top="43" left="10" width="115" height="24" zIndex="8" mouseDownText="Stop Demo" text="Run Demo" backColor="rgba(255, 137, 34, 1)" mouseDownBackColor="rgba(255, 137, 34, 1)" padding="0px 8px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" checkedBackColor="rgba(255, 186, 85, 1)" style="Contained" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="tbDanceDemoRunning" top="43" left="148" width="142" height="27" zIndex="9" text="Demo Running" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(0, 192, 0, 1)" fontSize="14px" fontName="Roboto" padding="0px 5px" checkedBackColor="rgba(0, 192, 0, 1)" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="tbDanceDemoError" top="77" left="148" width="138" height="27" zIndex="10" text="Error" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(255, 0, 0, 1)" fontSize="14px" fontName="Roboto" padding="0px 5px" checkedBackColor="rgba(255, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="toDanceDemoState" top="68" left="298" width="122" zIndex="11" value="default_state" textColor="rgba(0, 0, 0, 1)" textAlign="left" fontName="Roboto" fontSize="16px" padding="0px 1px 0px 1px" style="Output" />
+        <Widget xsi:type="widgets.brease.Label" id="lblDanceDemo" top="38" left="318" width="60" zIndex="12" text="State" textAlign="right" style="Caption" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="gbRoutingDemo" top="235" left="90" width="295" height="115" zIndex="1" borderWidth="2px 2px 0px 2px" cornerRadius="3px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="lblRoutingDemoIf" top="8" left="33" width="200" zIndex="0" text="Routing Demo" textAlign="center" style="Heading6" />
+        <Widget xsi:type="widgets.brease.PushButton" id="pbResetRoutingDemo" top="78" left="12" width="113" height="24" zIndex="1" text="Reset" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="tbRunRoutingDemo" top="43" left="10" width="115" height="24" zIndex="2" mouseDownText="Stop Demo" text="Run Demo" backColor="rgba(255, 137, 34, 1)" mouseDownBackColor="rgba(255, 137, 34, 1)" padding="0px 8px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" checkedBackColor="rgba(255, 186, 85, 1)" style="Contained" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="tbRoutingDemoRunning" top="44" left="146" width="132" height="27" zIndex="3" text="Demo Running" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(0, 192, 0, 1)" fontSize="14px" fontName="Roboto" padding="0px 5px" checkedBackColor="rgba(0, 192, 0, 1)" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="tbRoutingDemoError" top="78" left="148" width="128" height="27" zIndex="4" text="Error" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(255, 0, 0, 1)" fontSize="14px" fontName="Roboto" padding="0px 5px" checkedBackColor="rgba(255, 0, 0, 1)" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="gbRoutingDemo1" top="235" left="400" width="295" height="115" zIndex="2" borderWidth="2px 2px 0px 2px" cornerRadius="3px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="lblDofDemo" top="8" left="33" width="200" zIndex="0" text="DoF Demo" textAlign="center" style="Heading6" />
+        <Widget xsi:type="widgets.brease.PushButton" id="pbResetDofDemo" top="78" left="12" width="113" height="24" zIndex="1" text="Reset" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="tbRunDofDemo" top="43" left="10" width="115" height="24" zIndex="2" mouseDownText="Stop Demo" text="Run Demo" backColor="rgba(255, 137, 34, 1)" mouseDownBackColor="rgba(255, 137, 34, 1)" padding="0px 8px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" checkedBackColor="rgba(255, 186, 85, 1)" style="Contained" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="tbDofDemoRunning" top="44" left="146" width="132" height="27" zIndex="3" text="Demo Running" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(0, 192, 0, 1)" fontSize="14px" fontName="Roboto" padding="0px 5px" checkedBackColor="rgba(0, 192, 0, 1)" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="tbDofDemoError" top="78" left="148" width="128" height="27" zIndex="4" text="Error" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(255, 0, 0, 1)" fontSize="14px" fontName="Roboto" padding="0px 5px" checkedBackColor="rgba(255, 0, 0, 1)" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="gbRoutingDemo2" top="235" left="705" width="295" height="115" zIndex="3" borderWidth="2px 2px 0px 2px" cornerRadius="3px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="lblConvoySyncDemo" top="8" left="33" width="200" zIndex="0" text="Convoy Sync Demo" textAlign="center" style="Heading6" />
+        <Widget xsi:type="widgets.brease.PushButton" id="pbResetConvoySyncDemo" top="78" left="12" width="113" height="24" zIndex="1" text="Reset" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="tbRunConvoySyncDemo" top="43" left="10" width="115" height="24" zIndex="2" mouseDownText="Stop Demo" text="Run Demo" backColor="rgba(255, 137, 34, 1)" mouseDownBackColor="rgba(255, 137, 34, 1)" padding="0px 8px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" checkedBackColor="rgba(255, 186, 85, 1)" style="Contained" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="tbConvoySyncDemoRunning" top="44" left="146" width="132" height="27" zIndex="3" text="Demo Running" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(0, 192, 0, 1)" fontSize="14px" fontName="Roboto" padding="0px 5px" checkedBackColor="rgba(0, 192, 0, 1)" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="tbConvoySyncDemoError" top="78" left="148" width="128" height="27" zIndex="4" text="Error" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(255, 0, 0, 1)" fontSize="14px" fontName="Roboto" padding="0px 5px" checkedBackColor="rgba(255, 0, 0, 1)" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="gbTune" top="355" left="765" width="160" zIndex="8" borderWidth="2px 2px 0px 2px" cornerRadius="3px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="lblXPosition" top="48" left="18" width="14" zIndex="0" text="X:" textAlign="right" fontSize="12px" padding="0px 1px 0px 1px" style="Heading6" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="niXPosition" top="48" left="38" width="102" zIndex="1" format="{'metric':{'decimalPlaces':3,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':2,'minimumIntegerDigits':1}}" maxValue="50000" minValue="-50000" value="123.56" padding="0px 1px 0px 1px" style="Outlined" />
+        <Widget xsi:type="widgets.brease.Label" id="lblYPosition" top="78" left="18" width="14" zIndex="2" text="Y:" textAlign="right" fontSize="12px" padding="0px 1px 0px 1px" style="Heading6" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="niYPosition" top="78" left="38" width="102" zIndex="3" format="{'metric':{'decimalPlaces':3,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':2,'minimumIntegerDigits':1}}" maxValue="50000" minValue="-50000" value="123.56" padding="0px 1px 0px 1px" style="Outlined" />
+        <Widget xsi:type="widgets.brease.Label" id="lblZPosition" top="108" left="18" width="14" zIndex="4" text="Z:" textAlign="right" fontSize="12px" padding="0px 1px 0px 1px" style="Heading6" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="niZPosition" top="108" left="38" width="102" zIndex="5" format="{'metric':{'decimalPlaces':3,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':2,'minimumIntegerDigits':1}}" maxValue="50000" minValue="-50000" value="123.56" padding="0px 1px 0px 1px" style="Outlined" />
+        <Widget xsi:type="widgets.brease.Label" id="lblDescription" top="8" left="10" width="140" zIndex="6" text="Robot Location" textAlign="center" fontSize="16px" bold="true" style="Heading6" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

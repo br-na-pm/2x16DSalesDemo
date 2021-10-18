@@ -1,0 +1,5 @@
+VAR
+	state : CycChannelConfigStateEnum;
+	Fbs : CycChannelCfgFbsTyp;
+	logArgs : ARRAY[0..3] OF UDINT;
+END_VAR

@@ -1,0 +1,11 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Author: Giovanni Fassina <giovanni.fassina@br-automation.com>
+ * Created: Oct 16, 2018
+ ********************************************************************)
+VAR CONSTANT
+	sfbERR_INVALID_PARAMETER : DINT := -1; (*Error: one needed parameter is invalid or zero*)
+	sfbERR_UNABLE_TO_ALLOCATE_BUFFER : DINT := -2; (*Error: unable to allocate the needed buffer size*)
+	sfbERR_UNABLE_TO_FREE_BUFFER : DINT := -3; (*Error: unable to free the allocated buffer*)
+END_VAR

@@ -1,0 +1,12 @@
+VAR
+	startRef : ShuttleOutputTyp;
+	Wavepars : WaveParsTyp;
+	ShCtrl : ShuttleOutputTyp;
+	Fbs : WaveFbsTyp;
+	state : WaveStateEnum;
+	wave : BOOL;
+	shId : USINT;
+	defaultLevitationHeight : REAL;
+	Slide : WaveParsTyp;
+	Reset : BOOL;
+END_VAR

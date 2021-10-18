@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Library Version="2.01.0" SubType="Binary" Description="Slosh Free Base; numerical calculations and base functions to realize the Anti Slosh functionality. Second version." xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File Description="Exported data types">Enum.typ</File>
+    <File>Types.typ</File>
+    <File>InternalTypes.typ</File>
+    <File>PrivateTypes.typ</File>
+    <File>InternalConstants.var</File>
+    <File>ErrorCodes.var</File>
+    <File Description="Exported functions and function blocks">SlFreeBase.fun</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="brsystem" />
+    <Dependency ObjectName="sys_lib" />
+  </Dependencies>
+</Library>

@@ -1,0 +1,13 @@
+VAR CONSTANT
+	NUM_SEGMENTS : USINT := 2;
+	NUM_SEGMENTS_ARRAY : USINT := NUM_SEGMENTS-1;
+END_VAR
+VAR
+	state : Monitor6DStateEnum;
+	SystemStsIf : Monitor6DIfTyp;
+	i : USINT;
+	curSegIdx : USINT;
+	Fbs : Monitor6DFbsTyp;
+	SegStatusCheck : BOOL;
+	AbortCount : UDINT;
+END_VAR

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="WidgetLibrary" PackageType="WidgetLibrary" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Widget Library Description">Description.widgetlibrary</Object>
+    <Object Type="Package" Description="Resources">Resources</Object>
+    <Object Type="Package">Acp6DSegStatus</Object>
+    <Object Type="Package">Acp6DStation</Object>
+    <Object Type="Package">Acp6DStationPars</Object>
+    <Object Type="Package">Acp6DLoadStationPars</Object>
+    <Object Type="Package">Acp6DMacroInterfaceWidget</Object>
+  </Objects>
+</Package>

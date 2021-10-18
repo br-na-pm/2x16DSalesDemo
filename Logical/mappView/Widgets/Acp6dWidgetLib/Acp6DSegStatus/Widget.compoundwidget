@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompoundWidget id="Acp6DSegmentStatus" width="233" height="233" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+		<Widget xsi:type="widgets.brease.GroupBox" id="gbSegment" top="0" left="0" width="230" height="230" zIndex="0" borderWidth="2px 2px 0px 2px">
+			<Widgets>
+				<Widget xsi:type="widgets.brease.Label" id="lblCpu" top="60" left="60" width="48" height="18" zIndex="0" text="CPU" textAlign="right" fontSize="15px" padding="0px" />
+				<Widget xsi:type="widgets.brease.NumericOutput" id="noCpuTemp" top="63" left="103" width="57" height="12" zIndex="1" value="54.6" fontSize="15px" bold="true" padding="0px" />
+				<Widget xsi:type="widgets.brease.Label" id="lblAmplifier" top="113" left="35" width="73" height="18" zIndex="2" text="Amplifier" textAlign="right" fontSize="15px" padding="0px" />
+				<Widget xsi:type="widgets.brease.NumericOutput" id="noAmplifierTemp" top="118" left="105" width="55" height="12" zIndex="3" value="54.6" fontSize="15px" bold="true" padding="0px" />
+				<Widget xsi:type="widgets.brease.Label" id="lblMotor" top="173" left="68" width="40" height="18" zIndex="4" text="Motor" textAlign="right" fontSize="15px" padding="0px" />
+				<Widget xsi:type="widgets.brease.NumericOutput" id="noMotorTemp" top="178" left="105" width="55" height="12" zIndex="6" value="54.6" fontSize="15px" bold="true" padding="0px" />
+				<Widget xsi:type="widgets.brease.Label" id="lblPower" top="28" left="45" width="63" height="18" zIndex="7" text="Power" textAlign="right" fontSize="15px" padding="0px" />
+				<Widget xsi:type="widgets.brease.NumericOutput" id="noPowerUsage" top="31" left="103" width="57" height="13" zIndex="9" value="154.6" fontSize="15px" bold="true" padding="0px" />
+				<Widget xsi:type="widgets.brease.BasicSlider" id="bsCpuTemp" top="73" left="5" width="215" height="32" zIndex="5" image="LocalMedia/Stop.svg" trackSize="15px" thumbColor="rgba(255, 255, 255, 0)" trackGradient="linear-gradient(to left, #ff0a00 1%, #ff3c00 10%, #ff6e00 20%, #ffa000 30%, #ffd200 40%,#fdff00 50%,#3eff00 60%,#00ff83 70%,#00dfff 80%, #0084ff 90%, #0032ff 100%)" padding="0px" />
+				<Widget xsi:type="widgets.brease.BasicSlider" id="bsAmplifierTemp" top="128" left="5" width="215" height="32" zIndex="8" image="LocalMedia/Stop.svg" trackSize="15px" thumbColor="rgba(255, 255, 255, 0)" trackGradient="linear-gradient(to left, #ff0a00 1%, #ff3c00 10%, #ff6e00 20%, #ffa000 30%, #ffd200 40%,#fdff00 50%,#3eff00 60%,#00ff83 70%,#00dfff 80%, #0084ff 90%, #0032ff 100%)" padding="0px" />
+				<Widget xsi:type="widgets.brease.BasicSlider" id="bsMotorTemp" top="188" left="5" width="215" height="32" zIndex="10" image="LocalMedia/Stop.svg" trackSize="15px" thumbColor="rgba(255, 255, 255, 0)" trackGradient="linear-gradient(to left, #ff0a00 1%, #ff3c00 10%, #ff6e00 20%, #ffa000 30%, #ffd200 40%,#fdff00 50%,#3eff00 60%,#00ff83 70%,#00dfff 80%, #0084ff 90%, #0032ff 100%)" padding="0px" />
+				<Widget xsi:type="widgets.brease.Label" id="lblSegId" top="3" left="4" width="21" height="18" zIndex="11" text="1" textAlign="right" fontSize="16px" bold="true" padding="0px" />
+			</Widgets>
+		</Widget>
+	</Widgets>
+	<Properties>
+		<Property xsi:type="NonBindableProperty" name="SegmentID" type="String" defaultValue="1" readOnly="false" category="Data" localizable="true" >
+			<Description>Segment ID</Description>
+			<Mappings>
+				<Mapping widget="lblSegId" property="text"/>
+			</Mappings>
+		</Property>
+		
+		<Property xsi:type="StructureBindableProperty" name="SegmentStatusStructure" type="McAcp6DGetSegStatusInfoType" category="Data" readOnly="true" required="false">
+			<Description>Segment Status</Description>
+			<Mappings>
+				<Mapping widget="noCpuTemp" type="Number" property="value" mode="oneWay" memberPath="CPUTemp" mapToNode="false"/>			
+				<Mapping widget="noAmplifierTemp" type="Number" property="value" mode="oneWay" memberPath="AmplifierTemp" mapToNode="false"/>			
+				<Mapping widget="noMotorTemp" type="Number" property="value" mode="oneWay" memberPath="MotorTemp" mapToNode="false"/>			
+				<Mapping widget="noPowerUsage" type="Number" property="value" mode="oneWay" memberPath="Power" mapToNode="false"/>			
+				<Mapping widget="bsCpuTemp" type="Number" property="value" mode="oneWay" memberPath="CPUTemp" mapToNode="false"/>			
+				<Mapping widget="bsAmplifierTemp" type="Number" property="value" mode="oneWay" memberPath="AmplifierTemp" mapToNode="false"/>			
+				<Mapping widget="bsMotorTemp" type="Number" property="value" mode="oneWay" memberPath="MotorTemp" mapToNode="false"/>		
+			</Mappings>
+		</Property>
+		
+		<!-- 
+		Simple non bindable property:
+		Property Attributes
+		xsi:type: NonBindableProperty
+		name: name of the property (not allowed: width, height, top, left, id, enable, visible, zindex, margin, premissionview, permissionoperate, description)
+		<Property xsi:type="NonBindableProperty" name="" type="" defaultValue="" required="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property=""/>
+		<Mapping widget="" property=""/>
+		</Mappings>
+		</Property>
+    	
+		Simple bindable property:
+		<Property xsi:type="BindableProperty" name="" type="" defaultValue="" readOnly="" category="" localizable="" typeRefId="" nodeRefId="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property="" mode=""/>
+		<Mapping widget="" property="" mode=""/>
+		</Mappings>
+		</Property>
+
+
+		Structure bindable property:
+		<Property xsi:type="StructureBindableProperty" name="" type="" readOnly="" >
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" type="" property="" mode="" memberPath="" mapToNode=""/>
+		<Mapping widget="" type="" property="" mode="" memberPath="" mapToNode=""/>
+		<Mapping widget="" type="" property="" mode="" memberPath="" mapToNode=""/>
+		</Mappings>
+		</Property>
+		-->
+	</Properties>
+
+	<Events>
+		<!--
+		<Event name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" event="" />
+		</Mappings>
+		</Event>
+		-->
+	</Events>
+
+	<Actions>
+		<!--
+		<Action name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" action="" />
+		</Mappings>
+		</Action>
+		-->
+	</Actions>
+
+	<EventBindings>
+		<!-- source and target can only be widgets within the compound widget.
+		<EventBinding id="">
+		<Source xsi:type="widget.Event" widgetRefId="" event="" />
+		<EventHandler condition="">
+		<Action>
+		<Target xsi:type="widget.Action" widgetRefId="">
+		<Method name="" value="" />
+		</Target>
+		</Action>
+		</EventHandler>
+		</EventBinding>
+		-->
+	</EventBindings>
+
+</CompoundWidget>

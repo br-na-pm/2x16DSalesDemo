@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompoundWidget id="Acp6DMacroLoadInterface" width="443" height="183" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+		<Widget xsi:type="widgets.brease.GroupBox" id="gbMacroInterface" top="0" left="0" width="440" height="180" zIndex="0" borderWidth="2px 2px 0px 2px" cornerRadius="3px">
+			<Widgets>
+				<Widget xsi:type="widgets.brease.Label" id="lblMacroInterface" top="8" left="93" width="200" zIndex="0" text="Macro If" textAlign="center" style="Heading6" />
+				<Widget xsi:type="widgets.brease.ToggleButton" id="tbAllMacrosLoaded" top="108" left="153" width="92" height="19" zIndex="1" text="All Loaded" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(0, 192, 0, 1)" fontSize="14px" fontName="Roboto" padding="0px 5px" checkedBackColor="rgba(0, 192, 0, 1)" />
+				<Widget xsi:type="widgets.brease.PushButton" id="pbLoadAllMacro" top="43" left="13" width="113" height="32" zIndex="2" text="Load All" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+				<Widget xsi:type="widgets.brease.PushButton" id="pbLoadSingleMacro" top="85" left="13" width="112" height="32" zIndex="3" text="Load" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+				<Widget xsi:type="widgets.brease.PushButton" id="pbResetMacro" top="128" left="13" width="112" height="32" zIndex="4" text="Reset" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+				<Widget xsi:type="widgets.brease.ToggleButton" id="tbMacroLoadError" top="133" left="153" width="92" height="37" zIndex="5" breakWord="true" multiLine="true" text="Error" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(255, 0, 0, 1)" fontSize="14px" fontName="Roboto" padding="0px 5px" checkedBackColor="rgba(255, 0, 0, 1)" />
+				<Widget xsi:type="widgets.brease.ToggleButton" id="tbLoading" top="108" left="255" width="82" height="19" zIndex="6" text="Loading" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(0, 192, 0, 1)" fontSize="14px" fontName="Roboto" padding="0px 5px" checkedBackColor="rgba(0, 192, 0, 1)" />
+				<Widget xsi:type="widgets.brease.NumericOutput" id="noErrorMacroId" top="141" left="350" width="73" height="22" zIndex="7" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="200" showUnit="false" />
+				<Widget xsi:type="widgets.brease.Label" id="lblMacroLoadError" top="143" left="258" width="97" height="17" zIndex="8" text="Macro Error ID" />
+				<Widget xsi:type="widgets.brease.Label" id="lblSingleMacroLoadId" top="43" left="148" width="67" zIndex="9" text="Macro ID:" />
+				<Widget xsi:type="widgets.brease.Label" id="lblLoadSingleMacroFileName" top="73" left="148" width="67" zIndex="10" text="File Name:" />
+				<Widget xsi:type="widgets.brease.NumericInput" id="niSingleMacroLoadId" top="38" left="218" width="42" zIndex="11" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="191" minValue="128" showUnit="false" value="128" padding="0px 1px 0px 1px" />
+				<Widget xsi:type="widgets.brease.TextInput" id="tiLoadSingleMacroFileName" top="73" left="218" width="212" zIndex="12" />
+				<Widget xsi:type="widgets.brease.ToggleButton" id="tbCmdDone" top="108" left="348" width="82" height="19" zIndex="13" text="Done" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(0, 192, 0, 1)" fontSize="14px" fontName="Roboto" padding="0px 5px" checkedBackColor="rgba(0, 192, 0, 1)" />
+			</Widgets>
+		</Widget>
+	</Widgets>
+	<Properties>
+		<Property xsi:type="StructureBindableProperty" name="MacroInterface" type="gMacroLoadIfTYp" category="Data" readOnly="false" required="false">
+			<Description>Interface</Description>
+			<Mappings>
+				<Mapping widget="pbLoadAllMacro" type="Boolean" property="value" mode="twoWay" memberPath="Cmd.LoadAll" mapToNode="false"/>			
+				<Mapping widget="pbLoadSingleMacro" type="Boolean" property="value" mode="twoWay" memberPath="Cmd.LoadSingle" mapToNode="false"/>			
+				<Mapping widget="pbResetMacro" type="Boolean" property="value" mode="twoWay" memberPath="Cmd.Reset" mapToNode="false"/>			
+				<Mapping widget="tbAllMacrosLoaded" type="Boolean" property="value" mode="twoWay" memberPath="Sts.AllMacrosLoaded" mapToNode="false"/>			
+				<Mapping widget="tbLoading" type="Boolean" property="value" mode="twoWay" memberPath="Sts.Loading" mapToNode="false"/>			
+				<Mapping widget="tbMacroLoadError" type="Boolean" property="value" mode="twoWay" memberPath="Sts.Error" mapToNode="false"/>			
+				<Mapping widget="noErrorMacroId" type="Number" property="value" mode="twoWay" memberPath="Sts.MacroIDError" mapToNode="false"/>			
+				<Mapping widget="tbCmdDone" type="Boolean" property="value" mode="twoWay" memberPath="Sts.CmdDone" mapToNode="false"/>			
+				<Mapping widget="niSingleMacroLoadId" type="Number" property="value" mode="twoWay" memberPath="Par.SingleMacroLoad.MacroID" mapToNode="false"/>			
+				<Mapping widget="tiLoadSingleMacroFileName" type="String" property="value" mode="twoWay" memberPath="Par.SingleMacroLoad.MacroFileName" mapToNode="false"/>			
+			</Mappings>
+		</Property>
+	</Properties>
+
+	<Events>
+		<!--
+		<Event name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" event="" />
+		</Mappings>
+		</Event>
+		-->
+	</Events>
+
+	<Actions>
+		<!--
+		<Action name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" action="" />
+		</Mappings>
+		</Action>
+		-->
+	</Actions>
+
+	<EventBindings>
+		<!-- source and target can only be widgets within the compound widget.
+		<EventBinding id="">
+		<Source xsi:type="widget.Event" widgetRefId="" event="" />
+		<EventHandler condition="">
+		<Action>
+		<Target xsi:type="widget.Action" widgetRefId="">
+		<Method name="" value="" />
+		</Target>
+		</Action>
+		</EventHandler>
+		</EventBinding>
+		-->
+	</EventBindings>
+
+</CompoundWidget>

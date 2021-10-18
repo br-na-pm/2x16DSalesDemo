@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cntForceDetail" height="535" width="700" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.RadioButtonGroup" id="RadioButtonGroup1" top="0" left="0" width="700" height="535" zIndex="0">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.RadioButton" id="rbForceCtrlY" top="25" left="415" width="264" height="230" zIndex="0" boxSize="200" checkedBoxImage="Media/ForceYMode.svg" text="Y" uncheckedBoxImage="Media/ForceYMode.svg" mouseDownTextColor="rgba(255, 128, 0, 1)" fontSize="26px" padding="5px" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="rbForceCtrlX" top="25" left="45" width="264" height="230" zIndex="1" boxSize="200" checkedBoxImage="Media/ForceXMode.svg" text="X" uncheckedBoxImage="Media/ForceXMode.svg" value="true" mouseDownTextColor="rgba(255, 128, 0, 1)" fontSize="26px" padding="5px" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="rbForceCtrlXY" top="290" left="219" width="264" height="230" zIndex="2" boxSize="200" checkedBoxImage="Media/ForceXYMode.svg" text="X/Y" uncheckedBoxImage="Media/ForceXYMode.svg" mouseDownTextColor="rgba(255, 128, 0, 1)" fontSize="26px" padding="5px" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

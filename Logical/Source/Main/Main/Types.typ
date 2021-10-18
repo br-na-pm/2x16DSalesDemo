@@ -1,0 +1,20 @@
+
+TYPE
+	MainFbsTyp : 	STRUCT 
+		TimerFb : TON;
+		StopAllFb : MC_BR_Stop_Acp6D;
+	END_STRUCT;
+	MainStatesEnum : 
+		(
+		MAIN_OFF,
+		MAIN_INIT,
+		MAIN_RECOVERING,
+		MAIN_READY,
+		MAIN_STARTING,
+		MAIN_RUN_PROCESS,
+		MAIN_RUN_DANCE,
+		MAIN_STOPPING,
+		MAIN_ERROR,
+		MAIN_RESET
+		);
+END_TYPE

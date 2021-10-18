@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompoundWidget id="RecipeCtrlWidget" width="443" height="143" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+		<Widget xsi:type="widgets.brease.GroupBox" id="gbRecipeInterface" top="0" left="0" width="440" height="140" zIndex="6" borderWidth="2px 2px 0px 2px" cornerRadius="3px">
+			<Widgets>
+				<Widget xsi:type="widgets.brease.Label" id="lblRecipe" top="8" left="93" width="200" zIndex="0" text="Recipe Ctrl" textAlign="center" style="Heading6" />
+				<Widget xsi:type="widgets.brease.ToggleButton" id="tbRecipeError" top="103" left="288" width="92" height="27" zIndex="1" text="Error" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(255, 0, 0, 1)" fontSize="14px" fontName="Roboto" padding="0px 5px" checkedBackColor="rgba(255, 0, 0, 1)"/>
+				<Widget xsi:type="widgets.brease.PushButton" id="pbSaveRecipe" top="73" left="13" width="113" height="24" zIndex="2" text="Save" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+				<Widget xsi:type="widgets.brease.ToggleButton" id="tbRecipeCmdDone" top="103" left="176" width="84" height="27" zIndex="3" text="Done" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(0, 192, 0, 1)" fontSize="14px" fontName="Roboto" padding="0px 5px" checkedBackColor="rgba(0, 192, 0, 1)"/>
+				<Widget xsi:type="widgets.brease.PushButton" id="pbResetRecipe" top="103" left="13" width="113" height="24" zIndex="4" text="Reset" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+				<Widget xsi:type="widgets.brease.PushButton" id="pbLoadRecipe" top="43" left="13" width="113" height="24" zIndex="5" text="Load" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+				<Widget xsi:type="widgets.brease.Label" id="lblFileName" top="48" left="158" zIndex="6" text="File Name" />
+				<Widget xsi:type="widgets.brease.TextInput" id="tiRecipeFileName" top="48" left="238" width="177" zIndex="7" padding="0px 2px 0px 2px" />
+			</Widgets>
+		</Widget>
+	</Widgets>
+	<Properties>
+		<Property xsi:type="StructureBindableProperty" name="RecipeInterface" type="RecipeIfTyp" category="Data" readOnly="false" required="false">
+			<Description>Position Tune Structure</Description>
+			<Mappings>
+				<Mapping widget="tbRecipeError" type="Number" property="value" mode="oneWay" memberPath="Sts.Error" mapToNode="false"/>			
+				<Mapping widget="tbRecipeCmdDone" type="Number" property="value" mode="oneWay" memberPath="Sts.Done" mapToNode="false"/>			
+				<Mapping widget="pbSaveRecipe" type="Number" property="value" mode="twoWay" memberPath="Cmd.Save" mapToNode="false"/>			
+				<Mapping widget="pbLoadRecipe" type="Number" property="value" mode="twoWay" memberPath="Cmd.Load" mapToNode="false"/>			
+				<Mapping widget="pbResetRecipe" type="Number" property="value" mode="twoWay" memberPath="Cmd.Reset" mapToNode="false"/>			
+				<Mapping widget="tiRecipeFileName" type="String" property="value" mode="twoWay" memberPath="Par.FileName" mapToNode="false"/>			
+			</Mappings>
+		</Property>
+		
+		
+		<!-- 
+		Simple non bindable property:
+		Property Attributes
+		xsi:type: NonBindableProperty
+		name: name of the property (not allowed: width, height, top, left, id, enable, visible, zindex, margin, premissionview, permissionoperate, description)
+		<Property xsi:type="NonBindableProperty" name="" type="" defaultValue="" required="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property=""/>
+		<Mapping widget="" property=""/>
+		</Mappings>
+		</Property>
+    	
+		Simple bindable property:
+		<Property xsi:type="BindableProperty" name="" type="" defaultValue="" readOnly="" category="" localizable="" typeRefId="" nodeRefId="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property="" mode=""/>
+		<Mapping widget="" property="" mode=""/>
+		</Mappings>
+		</Property>
+
+
+		Structure bindable property:
+		<Property xsi:type="StructureBindableProperty" name="" type="" readOnly="" >
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" type="" property="" mode="" memberPath="" mapToNode=""/>
+		<Mapping widget="" type="" property="" mode="" memberPath="" mapToNode=""/>
+		<Mapping widget="" type="" property="" mode="" memberPath="" mapToNode=""/>
+		</Mappings>
+		</Property>
+		-->
+	</Properties>
+
+	<Events>
+		<!--
+		<Event name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" event="" />
+		</Mappings>
+		</Event>
+		-->
+	</Events>
+
+	<Actions>
+		<!--
+		<Action name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" action="" />
+		</Mappings>
+		</Action>
+		-->
+	</Actions>
+
+	<EventBindings>
+		<!-- source and target can only be widgets within the compound widget.
+		<EventBinding id="">
+		<Source xsi:type="widget.Event" widgetRefId="" event="" />
+		<EventHandler condition="">
+		<Action>
+		<Target xsi:type="widget.Action" widgetRefId="">
+		<Method name="" value="" />
+		</Target>
+		</Action>
+		</EventHandler>
+		</EventBinding>
+		-->
+	</EventBindings>
+
+</CompoundWidget>

@@ -1,0 +1,10 @@
+VAR
+	i : USINT; (*Loop index*)
+	shState : ARRAY[0..MAX_SHUTTLE_COUNT_ARRAY] OF ShStateEnum;
+	shFbs : ARRAY[0..MAX_SHUTTLE_COUNT_ARRAY] OF ShFbsTyp;
+	pDebugIf : REFERENCE TO ShuttleIfTyp;
+	pDebugFbs : REFERENCE TO ShFbsTyp;
+	pDebugState : REFERENCE TO ShStateEnum;
+	debugIdx : USINT;
+	logArgs : ARRAY[0..3] OF UDINT;
+END_VAR

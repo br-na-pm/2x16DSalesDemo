@@ -1,0 +1,10 @@
+VAR
+	state : StationStateEnum;
+	stationFbs : StationFbTyp;
+	stationPars : ProcessRecipeStationTyp;
+	pStPars : REFERENCE TO ProcessRecipeStationTyp;
+	pStIf : REFERENCE TO StationIfTyp;
+	taskName : STRING[80];
+	processDemoTyp : ProcessStationDemoEnum;
+	matrixState : USINT;
+END_VAR

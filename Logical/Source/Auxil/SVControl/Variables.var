@@ -1,0 +1,33 @@
+VAR
+	MoveText : STRING[80];
+	RadialMove : SV_BE_RadialMove;
+	FocalPointMove : SV_BE_FocalPointMove;
+	State : State_enum;
+	TravelTime : TIME := T#5s;
+	Vis : Vis_typ := (Controls:=(TimeInput:=5),Bind:=(FocalPointVisible:=TRUE));
+	FocalPointInit : SceneViewCoord_typ := (X:=503,Y:=313,Z:=54);
+	StartView : SceneViewCamera_typ := (Perspective:=TRUE,Zoom:=10,Fov:=60.2,ViewPoint:=(X:=1643.43848,Y:=313,Z:=1140),ViewVector:=(X:=-1.14043844,Y:=0,Z:=-1.086),OrientationVector:=(X:=0,Y:=0,Z:=1));
+	AngleRad : REAL;
+	PointA : SceneViewCamera_typ;
+	PointB : SceneViewCamera_typ;
+	TotalNumMoves : USINT;
+	CompletedMoves : USINT;
+	Point : ARRAY[0..2] OF SceneViewCamera_typ;
+END_VAR
+VAR CONSTANT
+	MAX_NUM_MOVES : USINT := 50;
+END_VAR
+VAR
+	MoveNumText : ARRAY[0..MAX_NUM_MOVES] OF STRING[80];
+	MoveIndexString : STRING[80];
+	IntermediateDateProvider : ARRAY[0..MAX_NUM_MOVES] OF STRING[80];
+	DataProvider : ARRAY[0..MAX_NUM_MOVES] OF STRING[80];
+	CamMove : ARRAY[0..MAX_NUM_MOVES] OF Move_typ;
+	i : USINT;
+	FocalPointB : SceneViewCoord_typ;
+	FocalPointA : SceneViewCoord_typ;
+	SvMovieRecipeFb : MpRecipeXml;
+	SvMovieRecipeRegParFb : MpRecipeRegPar;
+	svMovieRecipeIf : RecipeCtrlTyp;
+	DemoMode : BOOL;
+END_VAR

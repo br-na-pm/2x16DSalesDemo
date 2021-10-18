@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="AreaContentsPackage" PackageType="AreaContentsPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">cntHeader.content</Object>
+    <Object Type="File">cntMain.content</Object>
+    <Object Type="File">cntInfo.content</Object>
+    <Object Type="File">cntAdvancedDance.content</Object>
+    <Object Type="File">cnt6DDetail.content</Object>
+    <Object Type="File">cntSceneViewerCtrl.content</Object>
+    <Object Type="File">cntShuttlePositions.content</Object>
+    <Object Type="File">cntForceDetail.content</Object>
+    <Object Type="File">cntLandDetail.content</Object>
+    <Object Type="File">cntWeighDetail.content</Object>
+    <Object Type="File">cntAntiSloshDetail.content</Object>
+  </Objects>
+</Package>

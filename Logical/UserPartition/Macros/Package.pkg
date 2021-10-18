@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">135_RecoveryGroup0.xml</Object>
+    <Object Type="File">135_UpDown.xml</Object>
+    <Object Type="File">136_DownUp.xml</Object>
+    <Object Type="File">180_SpiralProc.xml</Object>
+    <Object Type="File">170_ConvoyDemo.xml</Object>
+    <Object Type="File">171_OuterLoopRoute.xml</Object>
+    <Object Type="File">172_InnerLoopRoute.xml</Object>
+    <Object Type="File">172_InnerLoopRoute_old.xml</Object>
+    <Object Type="File">181_MatrixProc.xml</Object>
+    <Object Type="File">182_SquareRotProc.xml</Object>
+    <Object Type="File">183_NonCenterRotation.xml</Object>
+    <Object Type="File">184_SquareAngled.xml</Object>
+    <Object Type="File">150_RepeatTest.xml</Object>
+    <Object Type="File">160_SyncDemo.xml</Object>
+    <Object Type="File">165_ActualWave.xml</Object>
+    <Object Type="File">165_WaveMove.xml</Object>
+    <Object Type="File">166_RxRyDemo.xml</Object>
+    <Object Type="File">165_WaveMove1.xml</Object>
+  </Objects>
+</Package>

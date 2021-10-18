@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompoundWidget id="Acp6DStation" width="440" height="125" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+		<Widget xsi:type="widgets.brease.ToggleButton" id="tbStationEnabled" top="40" left="245" width="105" height="19" zIndex="4" mouseDownText="Enabled" text="Disabled" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(0, 192, 0, 1)" fontSize="16px" fontName="Roboto" checkedBackColor="rgba(0, 192, 0, 1)"/>
+		<Widget xsi:type="widgets.brease.ToggleButton" id="tbStationProcessing" top="65" left="245" width="106" height="19" zIndex="5" mouseDownText="Processing" text="Processing" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(0, 192, 0, 1)" fontSize="16px" fontName="Roboto" checkedBackColor="rgba(0, 192, 0, 1)"/>
+		<Widget xsi:type="widgets.brease.ToggleButton" id="tbStationDone" top="40" left="360" width="76" height="19" zIndex="8" mouseDownText="Done" text="Done" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(0, 192, 0, 1)" fontSize="16px" fontName="Roboto" checkedBackColor="rgba(0, 192, 0, 1)"/>
+		<Widget xsi:type="widgets.brease.ToggleButton" id="tbStationReady" top="65" left="360" width="76" height="19" zIndex="7" mouseDownText="Ready" text="Ready" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(0, 192, 0, 1)" fontSize="16px" fontName="Roboto" checkedBackColor="rgba(0, 192, 0, 1)"/>
+		<Widget xsi:type="widgets.brease.ToggleButton" id="tbStationError" top="90" left="310" width="81" height="24" zIndex="9" mouseDownText="Error" text="Error" cornerRadius="10px" backColor="rgba(255, 192, 192, 1)" textColor="rgba(255, 255, 255, 1)" mouseDownBackColor="rgba(255, 0, 0, 1)" fontSize="16px" fontName="Roboto" checkedBackColor="rgba(255, 0, 0, 1)"/>
+		<Widget xsi:type="widgets.brease.PushButton" id="pbProcessCmd" top="65" left="5" width="66" height="24" zIndex="10" text="Process" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+		<Widget xsi:type="widgets.brease.PushButton" id="pbResetStation" top="65" left="75" width="66" height="24" zIndex="11" text="Reset" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+		<Widget xsi:type="widgets.brease.ToggleButton" id="tbEnableStation" top="35" left="5" width="135" height="24" zIndex="12" mouseDownText="Disable" text="Enable" backColor="rgba(255, 137, 34, 1)" mouseDownBackColor="rgba(255, 137, 34, 1)" padding="0px 8px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" checkedBackColor="rgba(255, 186, 85, 1)" style="Contained" />
+		<Widget xsi:type="widgets.brease.ToggleButton" id="tbLocalOverride" top="95" left="5" width="136" height="24" zIndex="13" text="Local Override" backColor="rgba(255, 137, 34, 1)" mouseDownBackColor="rgba(255, 137, 34, 1)" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" checkedBackColor="rgba(255, 186, 85, 1)" style="Contained" />
+		<Widget xsi:type="widgets.brease.NumericInput" id="niShuttleIdxInput" top="90" left="170" width="51" zIndex="14" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" showUnit="false" textAlign="center" padding="0px 1px 0px 1px" style="Outlined" />
+		<Widget xsi:type="widgets.brease.Label" id="lblCurrentShuttleIdx" top="50" left="155" zIndex="15" text="Shuttle Idx" textAlign="center" fontSize="14px" bold="false" />
+		<Widget xsi:type="widgets.brease.Label" id="lblStationName" top="5" left="110" width="185" zIndex="16" text="Station Name" style="Heading6" />
+		<Widget xsi:type="widgets.brease.Rectangle" id="rectBorder" top="0" left="0" width="440" height="125" zIndex="0" borderWidth="2px" cornerRadius="3px" lineColor="rgba(200, 200, 200, 1)" backColor="rgba(255, 255, 255, 1)" backGroundGradient="" />
+	</Widgets>
+	<Properties>
+		<Property xsi:type="NonBindableProperty" name="StationName" type="String" defaultValue="1" readOnly="false" category="Data" localizable="true" >
+			<Description>Segment ID</Description>
+			<Mappings>
+				<Mapping widget="lblStationName" property="text"/>
+			</Mappings>
+		</Property>
+		
+		<Property xsi:type="StructureBindableProperty" name="StationInterface" type="StationIfTyp" category="Data" readOnly="false" required="false">
+			<Description>Segment Status</Description>
+			<Mappings>
+				<Mapping widget="tbEnableStation" type="Boolean" property="value" mode="twoWay" memberPath="Cmd.Enable" mapToNode="false"/>			
+				<Mapping widget="pbProcessCmd" type="Boolean" property="value" mode="twoWay" memberPath="Cmd.Process" mapToNode="false"/>			
+				<Mapping widget="pbResetStation" type="Boolean" property="value" mode="twoWay" memberPath="Cmd.Reset" mapToNode="false"/>			
+				<Mapping widget="tbLocalOverride" type="Boolean" property="value" mode="twoWay" memberPath="Cmd.LocalOverride" mapToNode="false"/>			
+				<Mapping widget="tbStationEnabled" type="Boolean" property="value" mode="oneWay" memberPath="Sts.Enabled" mapToNode="false"/>			
+				<Mapping widget="tbStationProcessing" type="Boolean" property="value" mode="oneWay" memberPath="Sts.Processing" mapToNode="false"/>			
+				<Mapping widget="tbStationDone" type="Boolean" property="value" mode="oneWay" memberPath="Sts.Done" mapToNode="false"/>			
+				<Mapping widget="tbStationReady" type="Boolean" property="value" mode="oneWay" memberPath="Sts.ReadyForNewShuttle" mapToNode="false"/>			
+				<Mapping widget="tbStationError" type="Boolean" property="value" mode="oneWay" memberPath="Sts.Error" mapToNode="false"/>			
+				<Mapping widget="niShuttleIdxInput" type="Number" property="value" mode="twoWay" memberPath="Par.ShuttleIdx" mapToNode="false"/>			
+			</Mappings>
+		</Property>
+		
+		<!-- 
+		Simple non bindable property:
+		Property Attributes
+		xsi:type: NonBindableProperty
+		name: name of the property (not allowed: width, height, top, left, id, enable, visible, zindex, margin, premissionview, permissionoperate, description)
+		<Property xsi:type="NonBindableProperty" name="" type="" defaultValue="" required="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property=""/>
+		<Mapping widget="" property=""/>
+		</Mappings>
+		</Property>
+    	
+		Simple bindable property:
+		<Property xsi:type="BindableProperty" name="" type="" defaultValue="" readOnly="" category="" localizable="" typeRefId="" nodeRefId="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property="" mode=""/>
+		<Mapping widget="" property="" mode=""/>
+		</Mappings>
+		</Property>
+
+
+		Structure bindable property:
+		<Property xsi:type="StructureBindableProperty" name="" type="" readOnly="" >
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" type="" property="" mode="" memberPath="" mapToNode=""/>
+		<Mapping widget="" type="" property="" mode="" memberPath="" mapToNode=""/>
+		<Mapping widget="" type="" property="" mode="" memberPath="" mapToNode=""/>
+		</Mappings>
+		</Property>
+		-->
+	</Properties>
+
+	<Events>
+		<!--
+		<Event name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" event="" />
+		</Mappings>
+		</Event>
+		-->
+	</Events>
+
+	<Actions>
+		<!--
+		<Action name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" action="" />
+		</Mappings>
+		</Action>
+		-->
+	</Actions>
+
+	<EventBindings>
+		<!-- source and target can only be widgets within the compound widget.
+		<EventBinding id="">
+		<Source xsi:type="widget.Event" widgetRefId="" event="" />
+		<EventHandler condition="">
+		<Action>
+		<Target xsi:type="widget.Action" widgetRefId="">
+		<Method name="" value="" />
+		</Target>
+		</Action>
+		</EventHandler>
+		</EventBinding>
+		-->
+	</EventBindings>
+
+</CompoundWidget>

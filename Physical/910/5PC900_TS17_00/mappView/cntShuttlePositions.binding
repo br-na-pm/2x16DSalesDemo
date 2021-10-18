@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="cntShuttlePositions_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gShuttleIf[0].Sts.ShuttleInfo.Position.Value.X" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntShuttlePositions" widgetRefId="noShPositionX1" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gShuttleIf[0].Sts.ShuttleInfo.Position.Value.Y" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntShuttlePositions" widgetRefId="noShPositionY1" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gShuttleIf[0].Sts.ShuttleInfo.Position.Value.Z" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntShuttlePositions" widgetRefId="noShPositionZ1" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gShuttleIf[0].Sts.ShuttleInfo.Position.Value.RX" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntShuttlePositions" widgetRefId="noShPositionRx1" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gShuttleIf[0].Sts.ShuttleInfo.Position.Value.RY" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntShuttlePositions" widgetRefId="noShPositionRy1" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gShuttleIf[0].Sts.ShuttleInfo.Position.Value.RZ" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntShuttlePositions" widgetRefId="noShPositionRz1" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gShuttleIf[1].Sts.ShuttleInfo.Position.Value.X" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntShuttlePositions" widgetRefId="noShPositionX" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gShuttleIf[1].Sts.ShuttleInfo.Position.Value.Y" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntShuttlePositions" widgetRefId="noShPositionY" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gShuttleIf[1].Sts.ShuttleInfo.Position.Value.Z" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntShuttlePositions" widgetRefId="noShPositionZ" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gShuttleIf[1].Sts.ShuttleInfo.Position.Value.RX" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntShuttlePositions" widgetRefId="noShPositionRx" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gShuttleIf[1].Sts.ShuttleInfo.Position.Value.RY" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntShuttlePositions" widgetRefId="noShPositionRy" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gShuttleIf[1].Sts.ShuttleInfo.Position.Value.RZ" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntShuttlePositions" widgetRefId="noShPositionRz" attribute="node" />
+</Binding>
+</Bindings>
+</BindingsSet>

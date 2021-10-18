@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Commands>
+	<Command id="1">
+		<Parameter Name="MacroClear" MacroID="165"/>
+	</Command>
+	<Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="165" ZTarget="0.003" RXTarget="0.03" RYTarget ="0" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+	<Command id="3">
+		<Parameter Name="WaitTime" ShuttleID="165" TimeDelay="0.200" />
+	</Command>
+	<Command id="4">
+		<Parameter Name="MoveShortAxis" ShuttleID ="165" ZTarget="0.003" RXTarget="-0.03" RYTarget ="0" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+	<Command id="5">
+		<Parameter Name="WaitTime" ShuttleID="165" TimeDelay="0.200" />
+	</Command>
+	<Command id="6">
+		<Parameter Name="MoveShortAxis" ShuttleID ="165" ZTarget="0.003" RXTarget="0.03" RYTarget ="0" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+	<Command id="7">
+		<Parameter Name="WaitTime" ShuttleID="165" TimeDelay="0.200" />
+	</Command>
+	<Command id="8">
+		<Parameter Name="MoveShortAxis" ShuttleID ="165" ZTarget="0.003" RXTarget="-0.03" RYTarget ="0" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+	<Command id="9">
+		<Parameter Name="WaitTime" ShuttleID="165" TimeDelay="0.200" />
+	</Command>
+    <Command id="10">
+		<Parameter Name="MacroRun" MacroID="165" ShuttleID = "165"/>
+	</Command>
+	<Command id="11">
+		<Parameter Name="MacroSave" MacroID="165"/>
+	</Command>
+</Commands>

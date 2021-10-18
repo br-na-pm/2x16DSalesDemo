@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Commands>
+	<Command id="1">
+		<Parameter Name="MacroClear" MacroID="182"/>
+	</Command>
+    <!-- First Row -->
+	<Command id="2">
+		<Parameter Name="MoveInPlane" ShuttleID="182" XTarget="-0.05" YTarget="-0.05" Acc="5" Vel="0.45" EndVel="0.0" PositionMode="1" PathType="0"/>
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="182" ZTarget="0.0005" VelZ = "0.5" RXTarget="0.00" RYTarget ="0" RZTarget="-0.15" VelRx="0.0" VelRy="0.0" VelRz="1.0" PositionMode="0" />
+	</Command>
+    <Command id="3">
+		<Parameter Name="WaitTime" ShuttleID="182" TimeDelay="0.100" />
+	</Command>
+    <Command id="4">
+		<Parameter Name="MoveInPlane" ShuttleID="182" XTarget="0.1" YTarget="0.0" Acc="5" Vel="0.45" EndVel="0.0" PositionMode="1" PathType="0"/>
+	</Command>
+    <Command id="5">
+		<Parameter Name="WaitTime" ShuttleID="182" TimeDelay="0.100" />
+	</Command>
+    <Command id="6">
+		<Parameter Name="MoveInPlane" ShuttleID="182" XTarget="0.00" YTarget="0.1" Acc="5" Vel="0.45" EndVel="0.0" PositionMode="1" PathType="0"/>
+	</Command>
+    <Command id="7">
+		<Parameter Name="WaitTime" ShuttleID="182" TimeDelay="0.100" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="182"  ZTarget="0.0005" VelZ = "0.5" RXTarget="0.00" RYTarget ="0" RZTarget="0.13" VelRx="0.0" VelRy="0.0" VelRz="1.0" PositionMode="0" />
+	</Command>
+    <Command id="8">
+		<Parameter Name="MoveInPlane" ShuttleID="182" XTarget="-0.1" YTarget="0.00" Acc="5" Vel="0.45" EndVel="0.0" PositionMode="1" PathType="0"/>
+	</Command>
+    <Command id="9">
+		<Parameter Name="WaitTime" ShuttleID="182" TimeDelay="0.100" />
+	</Command>
+    <Command id="10">
+		<Parameter Name="MoveInPlane" ShuttleID="182" XTarget="0.00" YTarget="-0.1" Acc="5" Vel="0.45" EndVel="0.0" PositionMode="1" PathType="0"/>
+	</Command>
+    <Command id="11">
+		<Parameter Name="WaitTime" ShuttleID="182" TimeDelay="0.100" />
+	</Command>
+    <Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="182" RXTarget="0.00"  ZTarget="0.00175" VelZ = "0.5" RYTarget ="0" RZTarget="0.0" VelRx="0.0" VelRy="0.0" VelRz="1.0" PositionMode="0" />
+	</Command>
+    <Command id="10">
+		<Parameter Name="MoveInPlane" ShuttleID="182" XTarget="0.06" YTarget="0.06" Acc="5" Vel="0.45" EndVel="0.0" PositionMode="1" PathType="0"/>
+	</Command>
+    <Command id="11">
+		<Parameter Name="WaitTime" ShuttleID="182" TimeDelay="0.100" />
+	</Command>
+	<Command id="20">
+		<Parameter Name="MacroSave" MacroID="182"/>
+	</Command>
+</Commands>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="cntHeader_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+	
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMainIf.Cmd.Stop" attribute="value" />
+			<Target xsi:type="brease" contentRefId="cntHeader" widgetRefId="mpbStop" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMainIf.Cmd.Power" attribute="value" />
+			<Target xsi:type="brease" contentRefId="cntHeader" widgetRefId="tbPower" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gMainIf.Cmd.Reset" attribute="value" />
+			<Target xsi:type="brease" contentRefId="cntHeader" widgetRefId="mpbReset" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::Main:state" attribute="value" />
+			<Target xsi:type="snippet" refId="MainIfState" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gAcp6DCtrlIf.Sts.Error" attribute="value" />
+			<Target xsi:type="brease" contentRefId="cntHeader" widgetRefId="tb6DInError" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gAcp6DCtrlIf.Sts.PowerOn" attribute="value" />
+			<Target xsi:type="brease" contentRefId="cntHeader" widgetRefId="tb6DPower" attribute="value" />
+		</Binding>
+	</Bindings>
+</BindingsSet>

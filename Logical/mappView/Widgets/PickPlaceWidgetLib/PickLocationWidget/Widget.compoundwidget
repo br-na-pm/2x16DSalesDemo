@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompoundWidget id="PickLocationWidget" width="497" height="187" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+		<Widget xsi:type="widgets.brease.GroupBox" id="gbTune" top="0" left="0" width="495" height="185" zIndex="8" borderWidth="2px 2px 0px 2px" cornerRadius="3px">
+			<Widgets>
+				<Widget xsi:type="widgets.brease.Label" id="lblShuttleInfo3" top="148" left="238" width="200" zIndex="0" text="Tune" textAlign="center" fontSize="14px" style="Heading6" />
+				<Widget xsi:type="widgets.brease.Label" id="lblApproachHeight" top="28" left="298" width="101" zIndex="1" text="Approach Height" textAlign="right" fontSize="12px" padding="0px 1px 0px 1px" style="Heading6" />
+				<Widget xsi:type="widgets.brease.NumericInput" id="niTuneApproachHeight" top="28" left="403" width="82" zIndex="2" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':2,'minimumIntegerDigits':1}}" maxValue="500" minValue="-500" value="123.56" padding="0px 1px 0px 1px" style="Outlined" />
+				<Widget xsi:type="widgets.brease.Label" id="lblDepartHeight" top="58" left="298" width="101" zIndex="3" text="Depart Height" textAlign="right" fontSize="12px" padding="0px 1px 0px 1px" style="Heading6" />
+				<Widget xsi:type="widgets.brease.NumericInput" id="niTuneDepartHeight" top="58" left="403" width="82" zIndex="4" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':2,'minimumIntegerDigits':1}}" maxValue="500" minValue="-500" value="123.56" padding="0px 1px 0px 1px" style="Outlined" />
+				<Widget xsi:type="widgets.brease.Label" id="lblXTune" top="48" left="165" width="49" zIndex="5" text="X Tune" textAlign="right" fontSize="12px" padding="0px 1px 0px 1px" style="Heading6" />
+				<Widget xsi:type="widgets.brease.NumericInput" id="niXTune" top="48" left="218" width="82" zIndex="6" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':2,'minimumIntegerDigits':1}}" maxValue="500" minValue="-500" value="123.56" padding="0px 1px 0px 1px" style="Outlined" />
+				<Widget xsi:type="widgets.brease.Label" id="lblApproachHeight3" top="78" left="165" width="49" zIndex="7" text="Y Tune" textAlign="right" fontSize="12px" padding="0px 1px 0px 1px" style="Heading6" />
+				<Widget xsi:type="widgets.brease.NumericInput" id="niYTune" top="78" left="218" width="82" zIndex="8" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':2,'minimumIntegerDigits':1}}" maxValue="500" minValue="-500" value="123.56" padding="0px 1px 0px 1px" style="Outlined" />
+				<Widget xsi:type="widgets.brease.Label" id="lblRadius" top="88" left="335" width="64" zIndex="9" text="Radius" textAlign="right" fontSize="12px" padding="0px 1px 0px 1px" style="Heading6" />
+				<Widget xsi:type="widgets.brease.NumericInput" id="niTuneRadius" top="88" left="403" width="82" zIndex="10" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':2,'minimumIntegerDigits':1}}" maxValue="500" value="123.56" padding="0px 1px 0px 1px" style="Outlined" />
+				<Widget xsi:type="widgets.brease.Label" id="lblDwellTime" top="118" left="335" width="64" zIndex="11" text="Dwell Time" textAlign="right" fontSize="12px" padding="0px 1px 0px 1px" style="Heading6" />
+				<Widget xsi:type="widgets.brease.NumericInput" id="niTuneDwellTime" top="118" left="403" width="82" zIndex="12" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':2,'minimumIntegerDigits':1}}" maxValue="1000" value="1234" padding="0px 1px 0px 1px" style="Outlined" />
+				<Widget xsi:type="widgets.brease.Label" id="lblPosition" top="138" left="3" width="97" zIndex="13" text="Position" textAlign="center" fontSize="14px" style="Heading6" />
+				<Widget xsi:type="widgets.brease.Label" id="lblXPosition" top="48" left="5" width="14" zIndex="14" text="X:" textAlign="right" fontSize="12px" padding="0px 1px 0px 1px" style="Heading6" />
+				<Widget xsi:type="widgets.brease.NumericInput" id="niXPosition" top="48" left="23" width="102" zIndex="15" format="{'metric':{'decimalPlaces':3,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':2,'minimumIntegerDigits':1}}" maxValue="50000" minValue="-50000" value="123.56" padding="0px 1px 0px 1px" style="Outlined" />
+				<Widget xsi:type="widgets.brease.Label" id="lblYPosition" top="78" left="5" width="14" zIndex="16" text="Y:" textAlign="right" fontSize="12px" padding="0px 1px 0px 1px" style="Heading6" />
+				<Widget xsi:type="widgets.brease.NumericInput" id="niYPosition" top="78" left="23" width="102" zIndex="17" format="{'metric':{'decimalPlaces':3,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':2,'minimumIntegerDigits':1}}" maxValue="50000" minValue="-50000" value="123.56" padding="0px 1px 0px 1px" style="Outlined" />
+				<Widget xsi:type="widgets.brease.Label" id="lblZPosition" top="108" left="5" width="14" zIndex="18" text="Z:" textAlign="right" fontSize="12px" padding="0px 1px 0px 1px" style="Heading6" />
+				<Widget xsi:type="widgets.brease.NumericInput" id="niZPosition" top="108" left="23" width="102" zIndex="19" format="{'metric':{'decimalPlaces':3,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':2,'minimumIntegerDigits':1}}" maxValue="50000" minValue="-50000" value="123.56" padding="0px 1px 0px 1px" style="Outlined" />
+				<Widget xsi:type="widgets.brease.Label" id="lblDescription" top="8" left="98" width="97" zIndex="20" text="Description" textAlign="center" fontSize="16px" bold="true" style="Heading6" />
+				<Widget xsi:type="widgets.brease.Label" id="lblZTune" top="108" left="165" width="49" zIndex="21" text="Z Tune" textAlign="right" fontSize="12px" padding="0px 1px 0px 1px" style="Heading6" />
+				<Widget xsi:type="widgets.brease.NumericInput" id="niZTune" top="108" left="218" width="82" zIndex="22" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':2,'minimumIntegerDigits':1}}" maxValue="500" minValue="-500" value="123.56" padding="0px 1px 0px 1px" style="Outlined" />
+			</Widgets>
+		</Widget>
+	</Widgets>
+	<Properties>
+		<Property xsi:type="NonBindableProperty" name="PositionName" type="String" defaultValue="1" readOnly="false" category="Data" localizable="true" >
+			<Description>Name of Position</Description>
+			<Mappings>
+				<Mapping widget="lblDescription" property="text"/>
+			</Mappings>
+		</Property>
+		
+		<Property xsi:type="StructureBindableProperty" name="TuneInterface" type="RobotPickPlacePickTuneTyp" category="Data" readOnly="false" required="false">
+			<Description>Position Tune Structure</Description>
+			<Mappings>
+				<Mapping widget="niTuneApproachHeight" type="Number" property="value" mode="twoWay" memberPath="ApproachHeight" mapToNode="false"/>			
+				<Mapping widget="niTuneDepartHeight" type="Number" property="value" mode="twoWay" memberPath="DepartHeight" mapToNode="false"/>			
+				<Mapping widget="niXTune" type="Number" property="value" mode="twoWay" memberPath="XTune" mapToNode="false"/>			
+				<Mapping widget="niYTune" type="Number" property="value" mode="twoWay" memberPath="YTune" mapToNode="false"/>			
+				<Mapping widget="niZTune" type="Number" property="value" mode="oneWay" memberPath="ZTune" mapToNode="false"/>			
+				<Mapping widget="niTuneRadius" type="Number" property="value" mode="oneWay" memberPath="Radius" mapToNode="false"/>			
+				<Mapping widget="niTuneDwellTime" type="Number" property="value" mode="oneWay" memberPath="DwellTime" mapToNode="false"/>			
+			</Mappings>
+		</Property>
+		
+		<Property xsi:type="StructureBindableProperty" name="PositionConfiguration" type="RobotPickPlacePosTyp" category="Data" readOnly="false" required="false">
+			<Description>Position Configuration</Description>
+			<Mappings>
+				<Mapping widget="niXPosition" type="Number" property="value" mode="twoWay" memberPath="X" mapToNode="false"/>			
+				<Mapping widget="niYPosition" type="Number" property="value" mode="twoWay" memberPath="Y" mapToNode="false"/>			
+				<Mapping widget="niZPosition" type="Number" property="value" mode="twoWay" memberPath="Z" mapToNode="false"/>			
+			</Mappings>
+		</Property>
+		
+		<!-- 
+		Simple non bindable property:
+		Property Attributes
+		xsi:type: NonBindableProperty
+		name: name of the property (not allowed: width, height, top, left, id, enable, visible, zindex, margin, premissionview, permissionoperate, description)
+		<Property xsi:type="NonBindableProperty" name="" type="" defaultValue="" required="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property=""/>
+		<Mapping widget="" property=""/>
+		</Mappings>
+		</Property>
+    	
+		Simple bindable property:
+		<Property xsi:type="BindableProperty" name="" type="" defaultValue="" readOnly="" category="" localizable="" typeRefId="" nodeRefId="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property="" mode=""/>
+		<Mapping widget="" property="" mode=""/>
+		</Mappings>
+		</Property>
+
+
+		Structure bindable property:
+		<Property xsi:type="StructureBindableProperty" name="" type="" readOnly="" >
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" type="" property="" mode="" memberPath="" mapToNode=""/>
+		<Mapping widget="" type="" property="" mode="" memberPath="" mapToNode=""/>
+		<Mapping widget="" type="" property="" mode="" memberPath="" mapToNode=""/>
+		</Mappings>
+		</Property>
+		-->
+	</Properties>
+
+	<Events>
+		<!--
+		<Event name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" event="" />
+		</Mappings>
+		</Event>
+		-->
+	</Events>
+
+	<Actions>
+		<!--
+		<Action name="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" action="" />
+		</Mappings>
+		</Action>
+		-->
+	</Actions>
+
+	<EventBindings>
+		<!-- source and target can only be widgets within the compound widget.
+		<EventBinding id="">
+		<Source xsi:type="widget.Event" widgetRefId="" event="" />
+		<EventHandler condition="">
+		<Action>
+		<Target xsi:type="widget.Action" widgetRefId="">
+		<Method name="" value="" />
+		</Target>
+		</Action>
+		</EventHandler>
+		</EventBinding>
+		-->
+	</EventBindings>
+
+</CompoundWidget>

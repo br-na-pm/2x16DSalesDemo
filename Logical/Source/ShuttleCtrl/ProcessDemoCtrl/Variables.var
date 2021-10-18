@@ -1,0 +1,5 @@
+VAR
+	state : ProcessDemoStateEnum;
+	Fbs : ProcessDemoFbsTyp;
+	i : USINT;
+END_VAR

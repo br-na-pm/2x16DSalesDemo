@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpressionTypeSet id="TeachingExpressionTypes" xmlns="http://www.br-automation.com/iat2016/expressionType/v1">
+  <ExpressionTypes>
+		<ExpressionType name="And_AndNot" datatype="BOOL">
+			<Operands>
+				<Operand name="var1" datatype="BOOL" />
+				<Operand name="var2" datatype="BOOL" />
+				<Operand name="var3" datatype="BOOL" />
+			</Operands>
+			<Operation>
+				var1 AND var2 AND NOT var3
+			</Operation>
+		</ExpressionType>
+		<ExpressionType name="AndNot" datatype="BOOL">
+			<Operands>
+				<Operand name="var1" datatype="BOOL" />
+				<Operand name="var2" datatype="BOOL" />
+			</Operands>
+			<Operation>
+				var1 AND NOT var2
+			</Operation>
+		</ExpressionType>
+		<ExpressionType name="Not" datatype="BOOL">
+			<Operands>
+				<Operand name="var1" datatype="BOOL" />
+			</Operands>
+			<Operation>
+				NOT var1
+			</Operation>
+		</ExpressionType>
+		<ExpressionType name="DirectRead" datatype="BOOL">
+			<Operands>
+				<Operand name="var1" datatype="BOOL" />
+			</Operands>
+			<Operation>
+				var1
+			</Operation>
+		</ExpressionType>
+		<ExpressionType name="CheckForLoop" datatype="BOOL">
+			<Operands>
+				<Operand name="var1" datatype="ANY_INT" />
+			</Operands>
+			<Operation>
+				var1 = 0
+			</Operation>
+		</ExpressionType>
+		<ExpressionType name="CheckForIO" datatype="BOOL">
+			<Operands>
+				<Operand name="var1" datatype="ANY_INT" />
+			</Operands>
+			<Operation>
+				var1 = 1
+			</Operation>
+		</ExpressionType>
+		<ExpressionType name="CheckForDwell" datatype="BOOL">
+			<Operands>
+				<Operand name="var1" datatype="ANY_INT" />
+			</Operands>
+			<Operation>
+				var1 = 2
+			</Operation>
+		</ExpressionType>
+		<ExpressionType name="CheckForComment" datatype="BOOL">
+			<Operands>
+				<Operand name="var1" datatype="ANY_INT" />
+			</Operands>
+			<Operation>
+				var1 = 3
+			</Operation>
+		</ExpressionType>
+		<ExpressionType name="CheckForMovement" datatype="BOOL">
+			<Operands>
+				<Operand name="var1" datatype="ANY_INT" />
+			</Operands>
+			<Operation>
+				var1 = 4
+			</Operation>
+		</ExpressionType>
+  </ExpressionTypes>
+</ExpressionTypeSet>

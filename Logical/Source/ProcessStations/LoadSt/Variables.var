@@ -1,0 +1,8 @@
+VAR
+	i : INT;
+	state : LoadStationStateEnum;
+	stationFbs : LoadStationFbTyp;
+	stationPars : ProcessRecipeLoadTyp;
+	logArgs : ARRAY[0..3] OF UDINT;
+	startupCounter : USINT;
+END_VAR

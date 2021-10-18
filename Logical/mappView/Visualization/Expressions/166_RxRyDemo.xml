@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Commands>
+	<Command id="1">
+		<Parameter Name="MacroClear" MacroID="166"/>
+	</Command>
+	<!-- Rx Wobble-->
+	<Command id="2">
+		<Parameter Name="MoveShortAxis" ShuttleID ="166" ZTarget="0.003" RXTarget="0.03" RYTarget ="0" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+	<Command id="3">
+		<Parameter Name="WaitTime" ShuttleID="166" TimeDelay="0.100" />
+	</Command>
+	<Command id="4">
+		<Parameter Name="MoveShortAxis" ShuttleID ="166" ZTarget="0.003" RXTarget="-0.03" RYTarget ="0" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+	<Command id="5">
+		<Parameter Name="WaitTime" ShuttleID="166" TimeDelay="0.100" />
+	</Command>
+	<Command id="6">
+		<Parameter Name="MoveShortAxis" ShuttleID ="166" ZTarget="0.003" RXTarget="0.03" RYTarget ="0" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+	<Command id="7">
+		<Parameter Name="WaitTime" ShuttleID="166" TimeDelay="0.500" />
+	</Command>
+	<Command id="8">
+		<Parameter Name="MoveShortAxis" ShuttleID ="166" ZTarget="0.003" RXTarget="-0.03" RYTarget ="0" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+	<Command id="9">
+		<Parameter Name="WaitTime" ShuttleID="166" TimeDelay="0.500" />
+	</Command>
+	<!-- Ry Wobble-->
+	<Command id="10">
+		<Parameter Name="MoveShortAxis" ShuttleID ="166" ZTarget="0.003" RXTarget="0.0" RYTarget ="0.03" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+	<Command id="11">
+		<Parameter Name="WaitTime" ShuttleID="166" TimeDelay="0.500" />
+	</Command>
+	<Command id="12">
+		<Parameter Name="MoveShortAxis" ShuttleID ="166" ZTarget="0.003" RXTarget="0.0" RYTarget ="-0.03" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+	<Command id="13">
+		<Parameter Name="WaitTime" ShuttleID="166" TimeDelay="0.500" />
+	</Command>
+	<Command id="14">
+		<Parameter Name="MoveShortAxis" ShuttleID ="166" ZTarget="0.003" RXTarget="0.0" RYTarget ="0.03" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+	<Command id="15">
+		<Parameter Name="WaitTime" ShuttleID="166" TimeDelay="0.500" />
+	</Command>
+	<Command id="16">
+		<Parameter Name="MoveShortAxis" ShuttleID ="166" ZTarget="0.003" RXTarget="0.0" RYTarget ="-0.03" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+	<Command id="17">
+		<Parameter Name="WaitTime" ShuttleID="166" TimeDelay="0.500" />
+	</Command>
+	<!-- Square Wobble-->
+	<Command id="18">
+		<Parameter Name="MoveShortAxis" ShuttleID ="166" ZTarget="0.003" RXTarget="0.0" RYTarget ="0.020" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+	<Command id="19">
+		<Parameter Name="WaitTime" ShuttleID="166" TimeDelay="0.500" />
+	</Command>
+	<Command id="20">
+		<Parameter Name="MoveShortAxis" ShuttleID ="166" ZTarget="0.003" RXTarget="-0.020" RYTarget ="0.020" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+	<Command id="21">
+		<Parameter Name="WaitTime" ShuttleID="166" TimeDelay="0.500" />
+	</Command>
+	<Command id="22">
+		<Parameter Name="MoveShortAxis" ShuttleID ="166" ZTarget="0.003" RXTarget="-0.020" RYTarget ="-0.020" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+    <Command id="23">
+		<Parameter Name="WaitTime" ShuttleID="166" TimeDelay="0.500" />
+	</Command>
+	<Command id="24">
+		<Parameter Name="MoveShortAxis" ShuttleID ="166" ZTarget="0.003" RXTarget="0.020" RYTarget ="-0.020" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+    <Command id="25">
+		<Parameter Name="WaitTime" ShuttleID="166" TimeDelay="0.500" />
+	</Command>
+	<Command id="26">
+		<Parameter Name="MoveShortAxis" ShuttleID ="166" ZTarget="0.003" RXTarget="0.0" RYTarget ="0.020" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+	<Command id="27">
+		<Parameter Name="WaitTime" ShuttleID="166" TimeDelay="0.500" />
+	</Command>
+	<Command id="28">
+		<Parameter Name="MoveShortAxis" ShuttleID ="166" ZTarget="0.003" RXTarget="-0.020" RYTarget ="0.020" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+	<Command id="29">
+		<Parameter Name="WaitTime" ShuttleID="166" TimeDelay="0.500" />
+	</Command>
+	<Command id="30">
+		<Parameter Name="MoveShortAxis" ShuttleID ="166" ZTarget="0.003" RXTarget="-0.020" RYTarget ="-0.020" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+    <Command id="31">
+		<Parameter Name="WaitTime" ShuttleID="166" TimeDelay="0.500" />
+	</Command>
+	<Command id="32">
+		<Parameter Name="MoveShortAxis" ShuttleID ="166" ZTarget="0.003" RXTarget="0.020" RYTarget ="-0.020" RZTarget="0" VelRx="0.1" VelRy="0.1" PositionMode="0" />
+	</Command>
+    <Command id="33">
+		<Parameter Name="WaitTime" ShuttleID="166" TimeDelay="0.500" />
+	</Command>
+    <Command id="34">
+		<Parameter Name="MacroRun" MacroID="166" ShuttleID = "166"/>
+	</Command>
+	<Command id="35">
+		<Parameter Name="MacroSave" MacroID="166"/>
+	</Command>
+</Commands>

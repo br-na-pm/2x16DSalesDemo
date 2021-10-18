@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="cntMain_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gVariousDemoIf.Cmd.RunDemo" attribute="value" />
+			<Target xsi:type="brease" contentRefId="cntMain" widgetRefId="pbRunVaried" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gVariousDemoIf.Cmd.Stop" attribute="value" />
+			<Target xsi:type="brease" contentRefId="cntMain" widgetRefId="pbStopVaried" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gVariousDemoIf.Cmd.Reset" attribute="value" />
+			<Target xsi:type="brease" contentRefId="cntMain" widgetRefId="pbResetVaried" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarDemos:hmiIf.ModeChangable" attribute="value" samplingRate="fast" />
+			<Target xsi:type="brease" contentRefId="cntMain" widgetRefId="rbgDemoModes" attribute="enable" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::Monitor6D:SystemStsIf.Sts.System.Power" attribute="node" />
+			<Target xsi:type="brease" contentRefId="cntMain" widgetRefId="noCurrentPowerDraw" attribute="node" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::VarDemos:hmiIf.ResetEnable" attribute="value" samplingRate="fast" />
+			<Target xsi:type="brease" contentRefId="cntMain" widgetRefId="pbResetVaried" attribute="enable" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::VarDemos:hmiIf.StopEnable" attribute="value" samplingRate="fast" />
+			<Target xsi:type="brease" contentRefId="cntMain" widgetRefId="pbStopVaried" attribute="enable" />
+		</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::VarDemos:hmiIf.RunEnable" attribute="value" samplingRate="fast" />
+			<Target xsi:type="brease" contentRefId="cntMain" widgetRefId="pbRunVaried" attribute="enable" />
+		</Binding>
+
+
+	</Bindings>
+</BindingsSet>

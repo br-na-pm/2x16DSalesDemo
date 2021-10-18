@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="cntMainEventBinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="rbSlideDemoSelected">
+      <Source xsi:type="widgets.brease.RadioButton.Event" contentRefId="cntMain" widgetRefId="rbSlide" event="ValueChanged" />
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="cntMain" widgetRefId="ccDemoDetails">
+            <Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="cntShuttlePositions" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gVariousDemoIf.Par.Demo">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="rbLevelDemoSelected">
+      <Source xsi:type="widgets.brease.RadioButton.Event" contentRefId="cntMain" widgetRefId="rbLevel" event="ValueChanged" />
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="cntMain" widgetRefId="ccDemoDetails">
+            <Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="cntShuttlePositions" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gVariousDemoIf.Par.Demo">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="rbWeighDemoSelected">
+      <Source xsi:type="widgets.brease.RadioButton.Event" contentRefId="cntMain" widgetRefId="rbWeigh" event="ValueChanged" />
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="cntMain" widgetRefId="ccDemoDetails">
+            <Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="cntWeighDetail" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gVariousDemoIf.Par.Demo">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="rbLandDemoSelected">
+      <Source xsi:type="widgets.brease.RadioButton.Event" contentRefId="cntMain" widgetRefId="rbLand" event="ValueChanged" />
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="cntMain" widgetRefId="ccDemoDetails">
+            <Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="cntLandDetail" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gVariousDemoIf.Par.Demo">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="6" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="rbWaveDemoSelected">
+      <Source xsi:type="widgets.brease.RadioButton.Event" contentRefId="cntMain" widgetRefId="rbWave" event="ValueChanged" />
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="cntMain" widgetRefId="ccDemoDetails">
+            <Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="cntShuttlePositions" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gVariousDemoIf.Par.Demo">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="3" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="rbForceDemoSelected">
+      <Source xsi:type="widgets.brease.RadioButton.Event" contentRefId="cntMain" widgetRefId="rbForce" event="ValueChanged" />
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="cntMain" widgetRefId="ccDemoDetails">
+            <Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="cntForceDetail" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gVariousDemoIf.Par.Demo">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="rbAntiSLoshDemoSelected">
+      <Source xsi:type="widgets.brease.RadioButton.Event" contentRefId="cntMain" widgetRefId="rbAntiSlosh" event="ValueChanged" />
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="cntMain" widgetRefId="ccDemoDetails">
+            <Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="cntAntiSloshDetail" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gVariousDemoIf.Par.Demo">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="5" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="rbGenericDemoSelected">
+      <Source xsi:type="widgets.brease.RadioButton.Event" contentRefId="cntMain" widgetRefId="rbCycleDemos" event="ValueChanged" />
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="cntMain" widgetRefId="ccDemoDetails">
+            <Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="cntShuttlePositions" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gVariousDemoIf.Par.Demo">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="8" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

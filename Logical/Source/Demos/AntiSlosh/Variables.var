@@ -1,0 +1,13 @@
+VAR
+	AxisPars : MpAxisBasicParType;
+	Fbs : AntiSloshFbsTyp;
+	errorState : AntiSloshStatesEnum;
+	state : AntiSloshStatesEnum;
+	ProfGenHomed : BOOL;
+	Pars : AntiSloshParTyp;
+	ContainerParsCalculated : BOOL;
+	ShuttleCyclicChannelEnabled : BOOL;
+	Go : BOOL;
+	incAmount : REAL;
+	height : REAL;
+END_VAR

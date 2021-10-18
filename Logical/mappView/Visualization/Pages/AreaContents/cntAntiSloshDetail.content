@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cntAntiSloshDetail" height="535" width="700" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.GroupBox" id="gbShInfo" top="140" left="365" width="315" height="160" zIndex="0" text="Shuttle Info 2">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="shPositionX" top="8" left="14" width="26" zIndex="0" text="X:" />
+        <Widget xsi:type="widgets.brease.Label" id="shPositionY" top="38" left="14" width="26" zIndex="1" text="Y:" />
+        <Widget xsi:type="widgets.brease.Label" id="shPositionZ" top="68" left="14" width="26" zIndex="2" text="Z:" />
+        <Widget xsi:type="widgets.brease.Label" id="shPositionRx" top="8" left="164" width="26" zIndex="3" text="Rx:" />
+        <Widget xsi:type="widgets.brease.Label" id="shPositionRy" top="38" left="164" width="26" zIndex="4" text="Ry:" />
+        <Widget xsi:type="widgets.brease.Label" id="shPositionRz" top="68" left="164" width="26" zIndex="5" text="Rz:" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="noShPositionX" top="8" left="45" width="105" zIndex="6" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" value="660.2" padding="0px 1px 0px 1px" style="Output" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="noShPositionY" top="38" left="44" width="105" zIndex="7" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" value="660.2" padding="0px 1px 0px 1px" style="Output" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="noShPositionZ" top="68" left="44" width="105" zIndex="8" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" value="660.2" padding="0px 1px 0px 1px" style="Output" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="noShPositionRx" top="8" left="199" width="105" zIndex="9" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'C25','imperial':'C25','imperial-us':'C25'}" unitAlign="right" value="10.9" padding="0px 1px 0px 1px" style="Output" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="noShPositionRy" top="38" left="199" width="105" zIndex="10" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'C25','imperial':'C25','imperial-us':'C25'}" unitAlign="right" value="10.9" padding="0px 1px 0px 1px" style="Output" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="noShPositionRz" top="68" left="199" width="105" zIndex="11" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'C25','imperial':'C25','imperial-us':'C25'}" unitAlign="right" value="10.9" padding="0px 1px 0px 1px" style="Output" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="gbShInfo1" top="140" left="25" width="315" height="160" zIndex="1" text="Shuttle Info 1">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="shPositionX1" top="8" left="14" width="26" zIndex="0" text="X:" />
+        <Widget xsi:type="widgets.brease.Label" id="shPositionY1" top="38" left="14" width="26" zIndex="1" text="Y:" />
+        <Widget xsi:type="widgets.brease.Label" id="shPositionZ1" top="68" left="14" width="26" zIndex="2" text="Z:" />
+        <Widget xsi:type="widgets.brease.Label" id="shPositionRx1" top="8" left="164" width="26" zIndex="3" text="Rx:" />
+        <Widget xsi:type="widgets.brease.Label" id="shPositionRy1" top="38" left="164" width="26" zIndex="4" text="Ry:" />
+        <Widget xsi:type="widgets.brease.Label" id="shPositionRz1" top="68" left="164" width="26" zIndex="5" text="Rz:" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="noShPositionX1" top="8" left="45" width="105" zIndex="6" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" value="660.2" padding="0px 1px 0px 1px" style="Output" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="noShPositionY1" top="38" left="44" width="105" zIndex="7" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" value="660.2" padding="0px 1px 0px 1px" style="Output" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="noShPositionZ1" top="68" left="44" width="105" zIndex="8" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" value="660.2" padding="0px 1px 0px 1px" style="Output" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="noShPositionRx1" top="8" left="199" width="105" zIndex="9" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'C25','imperial':'C25','imperial-us':'C25'}" unitAlign="right" value="10.9" padding="0px 1px 0px 1px" style="Output" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="noShPositionRy1" top="38" left="199" width="105" zIndex="10" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'C25','imperial':'C25','imperial-us':'C25'}" unitAlign="right" value="10.9" padding="0px 1px 0px 1px" style="Output" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="noShPositionRz1" top="68" left="199" width="105" zIndex="11" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'C25','imperial':'C25','imperial-us':'C25'}" unitAlign="right" value="10.9" padding="0px 1px 0px 1px" style="Output" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.RadioButtonGroup" id="RadioButtonGroup1" top="355" left="65" width="600" height="165" zIndex="2">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.RadioButton" id="rbSetShapeSquare" top="70" left="85" zIndex="0" text="Square" fontSize="26px" foreColor="rgba(255, 255, 255, 1)" mouseDownForeColor="rgba(255, 137, 34, 1)" checkedBoxImageColor="rgba(255, 137, 34, 0)" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="rbSetShapeCylinder" top="70" left="340" zIndex="1" text="Cylinder" fontSize="26px" foreColor="rgba(255, 255, 255, 1)" mouseDownForeColor="rgba(255, 137, 34, 1)" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

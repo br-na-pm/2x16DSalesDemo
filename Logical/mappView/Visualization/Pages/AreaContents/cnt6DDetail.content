@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cnt6DDetail" height="740" width="1130" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.Acp6DWidgetLib.Acp6DBasicStationParameters" id="processStation1" top="385" left="305" zIndex="0" StationName="Process Station 1" />
+    <Widget xsi:type="widgets.Acp6DWidgetLib.Acp6DLoadStationPars" id="loadStation" top="225" left="495" zIndex="1" StationName="Load Station" />
+    <Widget xsi:type="widgets.Acp6DWidgetLib.Acp6DBasicStationParameters" id="processStation2" top="385" left="585" zIndex="2" StationName="Process Station 2" />
+    <Widget xsi:type="widgets.Acp6DWidgetLib.Acp6DBasicStationParameters" id="inspectStation" top="385" left="855" zIndex="3" StationName="Inspect Station" />
+    <Widget xsi:type="widgets.Acp6DWidgetLib.Acp6DLoadStationPars" id="unloadStation" top="225" left="770" zIndex="4" StationName="Unload Station" />
+    <Widget xsi:type="widgets.GenericWidgetLib.RecipeCtrlWidget" id="RecipeCtrlWidget1" top="585" left="660" zIndex="5" />
+    <Widget xsi:type="widgets.Acp6DWidgetLib.Acp6DMacroLoadInterface" id="macroLoadIf" top="10" left="10" zIndex="6" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="gbTune" top="15" left="560" width="160" height="115" zIndex="7" borderWidth="2px 2px 0px 2px" cornerRadius="3px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="lblDescription" top="8" left="10" width="140" zIndex="0" text="Q1 Brake" textAlign="center" fontSize="16px" bold="true" style="Heading6" />
+        <Widget xsi:type="widgets.brease.DropDownBox" id="ddbBrakeCmdQ1" top="43" left="15" width="130" zIndex="1" dataProvider="[{'value':'0','text':'Close'},{'value':'1','text':'Open'}]" selectedValue="0" />
+        <Widget xsi:type="widgets.brease.MomentaryPushButton" id="pbCmdBrakeQ1" top="78" left="15" width="130" zIndex="2" text="Execute" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="gbTune1" top="15" left="720" width="160" height="115" zIndex="8" borderWidth="2px 2px 0px 2px" cornerRadius="3px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="lblDescription1" top="8" left="10" width="140" zIndex="0" text="Q2 Brake" textAlign="center" fontSize="16px" bold="true" style="Heading6" />
+        <Widget xsi:type="widgets.brease.DropDownBox" id="ddbBrakeCmdQ2" top="43" left="15" width="130" zIndex="1" dataProvider="[{'value':'0','text':'Close'},{'value':'1','text':'Open'}]" selectedValue="0" />
+        <Widget xsi:type="widgets.brease.MomentaryPushButton" id="pbCmdBrakeQ2" top="78" left="15" width="130" zIndex="2" text="Execute" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="gbTune2" top="15" left="880" width="160" height="115" zIndex="9" borderWidth="2px 2px 0px 2px" cornerRadius="3px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="lblDescription2" top="8" left="10" width="140" zIndex="0" text="Q3 Brake" textAlign="center" fontSize="16px" bold="true" style="Heading6" />
+        <Widget xsi:type="widgets.brease.DropDownBox" id="ddbBrakeCmdQ3" top="43" left="15" width="130" zIndex="1" dataProvider="[{'value':'0','text':'Close'},{'value':'1','text':'Open'}]" selectedValue="0" />
+        <Widget xsi:type="widgets.brease.MomentaryPushButton" id="pbCmdBrakeQ3" top="78" left="15" width="130" zIndex="2" text="Execute" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="pbInitHome" top="140" left="660" width="130" zIndex="10" text="Init Home" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="pbHomeRobot" top="140" left="805" width="130" zIndex="11" text="Home" padding="0px 4px" shadow="0px 8px 10px rgba(0, 0, 0, 0.16)" mouseDownShadow="0px 2px 2px rgba(0, 0, 0, 0.14)" style="Contained" />
+  </Widgets>
+</Content>

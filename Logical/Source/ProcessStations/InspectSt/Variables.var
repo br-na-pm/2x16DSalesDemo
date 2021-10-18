@@ -1,0 +1,6 @@
+VAR
+	state : InspectStationStateEnum;
+	stationFbs : InspectStationFbTyp;
+	stationPars : ProcessRecipeStationTyp;
+	LedTime : TIME;
+END_VAR

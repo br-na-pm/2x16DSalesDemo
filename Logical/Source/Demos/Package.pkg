@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Private="true">DemoGlobalVariables.var</Object>
+    <Object Type="File" Private="true">DemoGlobalTypes.typ</Object>
+    <Object Type="Program" Language="IEC">WaveDemo</Object>
+    <Object Type="Program" Language="IEC">AntiSlosh</Object>
+    <Object Type="Program" Language="IEC">VarDemos</Object>
+  </Objects>
+</Package>
