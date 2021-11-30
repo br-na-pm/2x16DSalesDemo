@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="cntProfBuilder_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ProfDemo:hmiMove.Positions.XPos" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntProfBuilder" widgetRefId="niPositionX" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ProfDemo:hmiMove.Positions.YPos" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntProfBuilder" widgetRefId="niPositionY" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ProfDemo:hmiMove.Dynamics.Vel" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntProfBuilder" widgetRefId="niVelocity" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ProfDemo:hmiMove.Dynamics.Accel" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntProfBuilder" widgetRefId="niAccel" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ProfDemo:hmiMove.Dynamics.EndVel" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntProfBuilder" widgetRefId="niEndVel" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ProfDemo:hmiMove.ArcPar.Angle" attribute="node" />
+<Target xsi:type="brease" contentRefId="cntProfBuilder" widgetRefId="niArcAngle" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ProfDemo:hmiMove.ArcPar.Mode" attribute="value" />
+<Target xsi:type="brease" contentRefId="cntProfBuilder" widgetRefId="ddbArcMode" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ProfDemo:hmiMove.ArcPar.Direction" attribute="value" />
+<Target xsi:type="brease" contentRefId="cntProfBuilder" widgetRefId="ddbArcDirection" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ProfDemo:profFb.Execute" attribute="value" />
+<Target xsi:type="brease" contentRefId="cntProfBuilder" widgetRefId="mpbExecuteMove" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ProfDemo:profFb.ShId" attribute="value" />
+<Target xsi:type="brease" contentRefId="cntProfBuilder" widgetRefId="niShuttleID" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ProfDemo:hmiMove.InPlanePar.Mode" attribute="value" />
+<Target xsi:type="brease" contentRefId="cntProfBuilder" widgetRefId="ddbPlaneMode" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ProfDemo:hmiMove.InPlanePar.Path" attribute="value" />
+<Target xsi:type="brease" contentRefId="cntProfBuilder" widgetRefId="ddbPlanePath" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ProfDemo:hmiMove.MoveType" attribute="value" />
+<Target xsi:type="brease" contentRefId="cntProfBuilder" widgetRefId="ddbMoveType" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ProfDemo:hmiMove.LandPar" attribute="value" />
+<Target xsi:type="brease" contentRefId="cntProfBuilder" widgetRefId="ddbLandLevitate" attribute="selectedIndex" />
+</Binding>
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::ProfDemo:hmiIndex" attribute="value" />
+			<Target xsi:type="brease" contentRefId="cntProfBuilder" widgetRefId="ddpSelectedMove" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ProfDemo:resetMove" attribute="value" />
+<Target xsi:type="brease" contentRefId="cntProfBuilder" widgetRefId="pbReset" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

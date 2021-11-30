@@ -7,7 +7,13 @@
     <Object Type="File" Reference="true">\Physical\1685\X20CP1685\mappView\cntMain.binding</Object>
     <Object Type="File" Reference="true">\Physical\1685\X20CP1685\mappView\Config.mappviewcfg</Object>
     <Object Type="File" Reference="true">\Physical\1685\X20CP1685\mappView\OpcUaServer.uaserver</Object>
-    <Object Type="File">cntMainEventBinding.eventbinding</Object>
-    <Object Type="File">cntShuttlePositions.binding</Object>
+    <Object Type="File" Reference="true">\Physical\1685\X20CP1685\mappView\cntAntiSloshDetail.binding</Object>
+    <Object Type="File" Reference="true">\Physical\1685\X20CP1685\mappView\cntAntiSloshEventBinding.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\1685\X20CP1685\mappView\cntForceDetailEventBindings.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\1685\X20CP1685\mappView\cntLandDetail.binding</Object>
+    <Object Type="File" Reference="true">\Physical\1685\X20CP1685\mappView\cntMainEventBinding.eventbinding</Object>
+    <Object Type="File" Reference="true">\Physical\1685\X20CP1685\mappView\cntProfBuilder.binding</Object>
+    <Object Type="File" Reference="true">\Physical\1685\X20CP1685\mappView\cntShuttlePositions.binding</Object>
+    <Object Type="File" Reference="true">\Physical\1685\X20CP1685\mappView\cntWeighDetail.binding</Object>
   </Objects>
 </Package>

@@ -4,12 +4,40 @@
   <Aliases>
     <ACLAliases />
     <EURangeViolationAliases />
-    <EURangesAliases />
+    <EURangesAliases>
+      <EURanges Id="2">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">20</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="3">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">2</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="5">
+        <EURange>
+          <Low ValueProvider="Const">-0.48</Low>
+          <High ValueProvider="Const">0.48</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="6">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">10000</High>
+        </EURange>
+      </EURanges>
+    </EURangesAliases>
     <EngineeringUnitAliases>
       <EngineeringUnit Id="1" UnitId="4933453" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="kilogram" Symbol="kg" />
       <EngineeringUnit Id="2" UnitId="5723220" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="watt" Symbol="W" />
       <EngineeringUnit Id="3" UnitId="5067858" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="metre" Symbol="m" />
       <EngineeringUnit Id="4" UnitId="4405297" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="radian" Symbol="rad" />
+      <EngineeringUnit Id="5" UnitId="5067859" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="metre per second" Symbol="m/s" />
+      <EngineeringUnit Id="6" UnitId="5067595" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="metre per second squared" Symbol="m/s²" />
+      <EngineeringUnit Id="7" UnitId="5457219" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="second [unit of time]" Symbol="s" />
     </EngineeringUnitAliases>
   </Aliases>
   <DefaultView>
@@ -95,6 +123,30 @@
         <Variable Name="Pars">
           <Variable Name="ContainerType" />
         </Variable>
+      </Task>
+      <Task Name="ProfDemo">
+        <Variable Name="hmiIndex" />
+        <Variable Name="hmiMove" AutomaticEnable="True">
+          <Variable Name="Positions">
+            <Variable Name="XPos" EURangesId="5" EngineeringUnitId="3" />
+            <Variable Name="YPos" EURangesId="5" EngineeringUnitId="3" />
+            <Variable Name="ZPos" EngineeringUnitId="3" />
+          </Variable>
+          <Variable Name="Dynamics">
+            <Variable Name="Vel" EURangesId="3" EngineeringUnitId="5" />
+            <Variable Name="Accel" EURangesId="2" EngineeringUnitId="6" />
+            <Variable Name="EndVel" EURangesId="3" EngineeringUnitId="5" />
+          </Variable>
+          <Variable Name="ArcPar">
+            <Variable Name="Angle" EngineeringUnitId="4" />
+          </Variable>
+          <Variable Name="WaitTime" EURangesId="6" EngineeringUnitId="7" />
+        </Variable>
+        <Variable Name="profFb">
+          <Variable Name="Execute" />
+          <Variable Name="ShId" />
+        </Variable>
+        <Variable Name="resetMove" />
       </Task>
     </Module>
   </DefaultView>

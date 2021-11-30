@@ -13,5 +13,6 @@
     <Object Type="File">cntLandDetail.content</Object>
     <Object Type="File">cntWeighDetail.content</Object>
     <Object Type="File">cntAntiSloshDetail.content</Object>
+    <Object Type="File">cntProfBuilder.content</Object>
   </Objects>
 </Package>

@@ -1,0 +1,15 @@
+VAR
+	profFb : ProfBuilderFb;
+	moveProf : ProfBuilderParTyp;
+	hmiIndex : USINT;
+	hmiMove : REFERENCE TO ProfBuilderMoveParTyp;
+	resetMove : BOOL;
+	state : INT;
+	startVibration : BOOL;
+	RunMacroFB : MC_BR_MacroRun_Acp6D;
+	StopFb : MC_BR_Stop_Acp6D;
+	WaitTon : TON;
+	shuttleId : USINT;
+	vibrationTime : UDINT;
+	errorReset : BOOL;
+END_VAR

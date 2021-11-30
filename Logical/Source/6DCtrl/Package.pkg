@@ -6,5 +6,6 @@
     <Object Type="File" Private="true">Acp6DTypes.typ</Object>
     <Object Type="Program" Language="IEC">6DCtrl</Object>
     <Object Type="Program" Language="IEC">MacroLoad</Object>
+    <Object Type="Program" Language="IEC">ProfDemo</Object>
   </Objects>
 </Package>

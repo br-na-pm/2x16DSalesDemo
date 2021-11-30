@@ -14,5 +14,6 @@
     <Object Type="File">cntLandDetail.binding</Object>
     <Object Type="File">cntAntiSloshEventBinding.eventbinding</Object>
     <Object Type="File">cntAntiSloshDetail.binding</Object>
+    <Object Type="File">cntProfBuilder.binding</Object>
   </Objects>
 </Package>

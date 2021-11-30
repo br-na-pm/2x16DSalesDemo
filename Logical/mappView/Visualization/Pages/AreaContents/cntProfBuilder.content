@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cntProfBuilder" height="535" width="700" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="20" width="120" zIndex="0" text="Number Of Moves" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="niNumMoves" top="20" left="145" width="60" zIndex="1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.DropDownBox" id="ddpSelectedMove" top="120" left="20" zIndex="2" dataProvider="[{'value':'0','text':'1'},{'value':'1','text':'2'},{'value':'2','text':'3'},{'value':'3','text':'4'},{'value':'4','text':'5'},{'value':'5','text':'6'},{'value':'6','text':'7'},{'value':'7','text':'8'},{'value':'8','text':'9'},{'value':'9','text':'10'}]" selectedValue="0" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="80" left="15" width="85" zIndex="3" text="Edit Move" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="155" left="310" width="110" zIndex="4" text="Plane Parameters" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="210" left="90" width="70" zIndex="5" text="X:" />
+    <Widget xsi:type="widgets.brease.Label" id="Label5" top="240" left="90" width="70" zIndex="6" text="Y:" />
+    <Widget xsi:type="widgets.brease.Label" id="Label6" top="170" left="130" width="110" zIndex="7" text="Position" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="niPositionX" top="205" left="130" width="135" zIndex="8" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="niPositionY" top="240" left="130" width="135" zIndex="9" unit="{'metric':'MMT','imperial':'MMT','imperial-us':'MMT'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.Label" id="Label7" top="205" left="295" width="70" zIndex="10" text="Path" />
+    <Widget xsi:type="widgets.brease.Label" id="Label8" top="245" left="295" width="70" zIndex="11" text="Mode:" />
+    <Widget xsi:type="widgets.brease.DropDownBox" id="ddbPlanePath" top="205" left="345" zIndex="12" dataProvider="[{'value':'0','text':'Direct'},{'value':'1','text':'X Then Y'},{'value':'2','text':'Y Then X'}]" selectedValue="0" />
+    <Widget xsi:type="widgets.brease.DropDownBox" id="ddbPlaneMode" top="245" left="345" zIndex="13" dataProvider="[{'value':'0','text':'Absolute'},{'value':'1','text':'Relative'}]" selectedValue="0" />
+    <Widget xsi:type="widgets.brease.Label" id="Label9" top="155" left="505" width="110" zIndex="14" text="Arc Parameters" />
+    <Widget xsi:type="widgets.brease.Label" id="Label10" top="205" left="475" width="70" zIndex="15" text="Direction" />
+    <Widget xsi:type="widgets.brease.Label" id="Label11" top="245" left="490" width="70" zIndex="16" text="Mode:" />
+    <Widget xsi:type="widgets.brease.DropDownBox" id="ddbArcDirection" top="205" left="540" width="145" zIndex="17" dataProvider="[{'value':'0','text':'Clockwise'},{'value':'1','text':'Counter Clockwise'}]" selectedValue="0" />
+    <Widget xsi:type="widgets.brease.Label" id="Label12" top="330" left="55" width="70" zIndex="18" text="Velocity:" />
+    <Widget xsi:type="widgets.brease.Label" id="Label13" top="365" left="40" width="75" zIndex="19" text="Acceleration" />
+    <Widget xsi:type="widgets.brease.Label" id="Label14" top="295" left="130" width="110" zIndex="20" text="Position" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="niVelocity" top="330" left="130" width="135" zIndex="21" unit="{'metric':'MTS','imperial':'MTS','imperial-us':'MTS'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="niAccel" top="365" left="130" width="135" zIndex="22" unit="{'metric':'MSK','imperial':'MSK','imperial-us':'MSK'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.Label" id="Label15" top="400" left="40" width="75" zIndex="23" text="End Velocity" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="niEndVel" top="400" left="130" width="135" zIndex="24" unit="{'metric':'MTS','imperial':'MTS','imperial-us':'MTS'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.DropDownBox" id="ddbArcMode" top="245" left="540" width="145" zIndex="25" dataProvider="[{'value':'0','text':'Absolute'},{'value':'1','text':'Relative'}]" selectedValue="0" />
+    <Widget xsi:type="widgets.brease.Label" id="Label16" top="285" left="485" width="70" zIndex="26" text="Angle:" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="niArcAngle" top="285" left="540" zIndex="27" unit="{'metric':'DD','imperial':'DD','imperial-us':'DD'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="mpbExecuteMove" top="15" left="425" width="215" height="50" zIndex="28" text="Execute Move" style="Contained" />
+    <Widget xsi:type="widgets.brease.Label" id="Label17" top="120" left="240" zIndex="29" text="Shuttle ID:" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="niShuttleID" top="120" left="335" width="60" zIndex="30" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.Label" id="Label18" top="120" left="420" width="110" zIndex="31" text="Move Type" />
+    <Widget xsi:type="widgets.brease.DropDownBox" id="ddbMoveType" top="120" left="505" width="160" zIndex="32" dataProvider="[{'value':'0','text':'None'},{'value':'1','text':'Plane Move'},{'value':'2','text':'Arc Move'},{'value':'3','text':'Land/Levitate'}]" selectedValue="0" />
+    <Widget xsi:type="widgets.brease.Label" id="Label20" top="390" left="305" zIndex="33" text="Land/Levitate" />
+    <Widget xsi:type="widgets.brease.DropDownBox" id="ddbLandLevitate" top="390" left="390" zIndex="34" dataProvider="[{'value':'0','text':'Land'},{'value':'1','text':'Levitate'}]" selectedValue="0" />
+    <Widget xsi:type="widgets.brease.PushButton" id="pbReset" top="120" left="140" width="55" zIndex="35" text="Reset" padding="0px 5px" style="Contained" />
+  </Widgets>
+</Content>

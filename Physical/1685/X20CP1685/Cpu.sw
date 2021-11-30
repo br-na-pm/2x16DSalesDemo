@@ -5,6 +5,7 @@
     <Task Name="6DCtrl" Source="Source.6DCtrl.6DCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="VarDemos" Source="Source.Demos.VarDemos.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="AntiSlosh" Source="Source.Demos.AntiSlosh.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="ProfDemo" Source="Source.6DCtrl.ProfDemo.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3">
@@ -101,6 +102,7 @@
     <LibraryObject Name="powerlnk" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="arssl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asusb" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="Prof6DBdlr" Source="Libraries.Prof6DBdlr.lby" Memory="UserROM" Language="IEC" Debugging="true" />
     <LibraryObject Name="WFilter" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asarlog" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asmem" Source="" Memory="UserROM" Language="Binary" Debugging="true" />

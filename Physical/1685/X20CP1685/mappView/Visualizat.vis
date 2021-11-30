@@ -14,6 +14,7 @@
 		<BindingsSet refId="cntWeighDetail_binding"/>
 		<BindingsSet refId="cntLandDetail_binding"/>
 		<BindingsSet refId="cntAntiSloshDetail_binding"/>
+		<BindingsSet refId="cntProfBuilder_binding"/>
 	</BindingsSets>
 	<EventBindingsSets>
 		<EventBindingsSet refId = "cntMainEventBinding"/>
@@ -29,6 +30,7 @@
 		<Content refId="cntLandDetail" />
 		<Content refId="cntWeighDetail" />
 		<Content refId="cntAntiSloshDetail"/>
+		<Content refId="cntProfBuilder"/>
 	</Contents>
 	<SnippetsSets>
 		<SnippetsSet refId="SysStateSnippets"/>

@@ -3,9 +3,9 @@
 <SwConfiguration CpuAddress="SL1" xmlns="http://br-automation.co.at/AS/SwConfiguration">
   <TaskClass Name="Cyclic#1">
     <Task Name="6DCtrl" Source="Source.6DCtrl.6DCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="WaveDemo" Source="Source.Demos.WaveDemo.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="AntiSlosh" Source="Source.Demos.AntiSlosh.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="ProfDemo" Source="Source.6DCtrl.ProfDemo.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="VarDemos" Source="Source.Demos.VarDemos.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="AntiSlosh" Source="Source.Demos.AntiSlosh.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ConvUnload" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <Task Name="KalmanTes1" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <Task Name="VariedMovD" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
@@ -115,6 +115,7 @@
     <LibraryObject Name="SceneView" Source="Libraries.SceneView.lby" Memory="UserROM" Language="IEC" Debugging="true" />
     <LibraryObject Name="McPureVAx" Source="Libraries.McPureVAx.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="SlFreeBase" Source="Libraries.SlFreeBase.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="Prof6DBdlr" Source="Libraries.Prof6DBdlr.lby" Memory="UserROM" Language="IEC" Debugging="true" />
     <LibraryObject Name="arssl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="powerlnk" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asusb" Source="" Memory="UserROM" Language="Binary" Debugging="true" />

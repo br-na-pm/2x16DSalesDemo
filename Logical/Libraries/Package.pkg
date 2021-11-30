@@ -45,5 +45,6 @@
     <Object Type="Library" Language="binary" Description="[mapp Motion] Purely virtual axis library">McPureVAx</Object>
     <Object Type="Library" Language="Binary" Description="Slosh Free Base; numerical calculations and base functions to realize the Anti Slosh functionality. Second version.">SlFreeBase</Object>
     <Object Type="Library" Language="binary" Description="This mechatronics library contains function blocks for profile generation.">MTProfile</Object>
+    <Object Type="Library" Language="IEC">Prof6DBdlr</Object>
   </Objects>
 </Package>

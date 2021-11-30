@@ -137,5 +137,15 @@
         </Action>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="rbProfileDemo">
+      <Source xsi:type="widgets.brease.RadioButton.Event" contentRefId="cntMain" widgetRefId="rbProfileDemo" event="ValueChanged" />
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="cntMain" widgetRefId="ccDemoDetails">
+            <Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="cntProfBuilder" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>
