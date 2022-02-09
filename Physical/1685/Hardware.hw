@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.10.2.37 FileVersion="4.9"?>
+<?AutomationStudio Version=4.11.1.147 FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
   <Module Name="6PPT80.121E-10A" Type="6PPT80.121E-10A" Version="1.0.2.0">
     <Connection Connector="ETH1" TargetModule="X20CP1685" TargetConnector="IF2">
@@ -28,7 +28,7 @@
     </Connection>
     <Parameter ID="Supervision" Value="off" />
   </Module>
-  <Module Name="X20BM11" Type="X20BM11" Version="1.0.0.1">
+  <Module Name="X20BM11" Type="X20BM11" Version="1.1.0.0">
     <Connection Connector="X2X1" TargetModule="X20CP1685" TargetConnector="IF6" />
   </Module>
   <Module Name="X20CP1685" Type="X20CP1685" Version="1.4.0.0">
