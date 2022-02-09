@@ -3,6 +3,7 @@
 <SwConfiguration CpuAddress="SL1" xmlns="http://br-automation.co.at/AS/SwConfiguration">
   <TaskClass Name="Cyclic#1">
     <Task Name="6DCtrl" Source="Source.6DCtrl.6DCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="MixDemo" Source="Source.Demos.MixDemo.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ProfDemo" Source="Source.6DCtrl.ProfDemo.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="VarDemos" Source="Source.Demos.VarDemos.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="AntiSlosh" Source="Source.Demos.AntiSlosh.prg" Memory="UserROM" Language="IEC" Debugging="true" />
@@ -58,6 +59,8 @@
     <BinaryObject Name="TC" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config_1" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config_2" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="TraceConfi" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Settings_1" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config_4" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Hierarchy" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config_5" Source="" Memory="UserROM" Language="Binary" />
@@ -73,7 +76,6 @@
     <BinaryObject Name="Config_9" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config_7" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config_10" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="TraceConfi" Source="" Memory="UserROM" Language="Binary" />
   </Binaries>
   <Libraries>
     <LibraryObject Name="MpAudit" Source="Libraries.MpAudit.lby" Memory="UserROM" Language="Binary" Debugging="true" />
@@ -126,6 +128,7 @@
     <LibraryObject Name="asio" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="aruser" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asmath" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="mtprofile" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="MpRobotics" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asepl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>

@@ -1,0 +1,24 @@
+﻿<?xml version="0.01" encoding="utf-8"?>
+<Commands>
+	<Command id="1">
+		<Parameter Name="MacroClear" MacroID="130"/>
+	</Command>
+    <!-- First Movement To Start Position-->
+    <Command id="2">
+		<Parameter Name="MoveInPlane" ShuttleID="130" XTarget="0.240" YTarget="0.12" Acc="1" Vel="0.50" EndVel="0.0" PositionMode="0" PathType="0"/>
+	</Command>
+    <Command id="2">
+		<Parameter Name="WaitTime" ShuttleID="130" TimeDelay="1"/>
+	</Command>
+    <!-- Move to the first mixing location-->
+    <Command id="2">
+		<Parameter Name="MoveInPlane" ShuttleID="130" XTarget="0.12" YTarget="0.12" Acc="1" Vel="0.50" EndVel="0.0" PositionMode="0" PathType="0"/>
+	</Command>
+    <!-- Wait for the first dye addition-->
+    <Command id="2">
+		<Parameter Name="WaitTime" ShuttleID="130" TimeDelay="2"/>
+	</Command>
+	<Command id="14">
+		<Parameter Name="MacroSave" MacroID="130"/>
+	</Command>
+</Commands>

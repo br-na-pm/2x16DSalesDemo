@@ -1,0 +1,11 @@
+VAR
+	Fbs : FbsTyp;
+	state : UDINT;
+	shId : USINT;
+END_VAR
+VAR RETAIN
+	run : BOOL;
+END_VAR
+VAR
+	macroId : USINT;
+END_VAR

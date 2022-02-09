@@ -7,5 +7,6 @@
     <Object Type="Program" Language="IEC">WaveDemo</Object>
     <Object Type="Program" Language="IEC">AntiSlosh</Object>
     <Object Type="Program" Language="IEC">VarDemos</Object>
+    <Object Type="Program" Language="IEC">MixDemo</Object>
   </Objects>
 </Package>

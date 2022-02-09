@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Commands>
+	<Command id="1">
+		<Parameter Name="MacroClear" MacroID="131"/>
+	</Command>
+	<!-- 3rd Movement-->
+	<Command id="2">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="0.005" YTarget="0.0" Acc="5" Vel="0.05" EndVel="0.05" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="3">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="-0.010" YTarget="0.0" Acc="5" Vel="0.05" EndVel="0.1" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="4">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="0.015" YTarget="0.0" Acc="5" Vel="0.1" EndVel="0.1" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="5">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="-0.020" YTarget="0.0" Acc="5" Vel="0.1" EndVel="0.2" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="6">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="0.025" YTarget="0.0" Acc="5" Vel="0.2" EndVel="0.2" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="7">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="-0.030" YTarget="0.0" Acc="5" Vel="0.2" EndVel="0.2" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="8">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="0.030" YTarget="0.0" Acc="5" Vel="0.2" EndVel="0.2" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="8">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="-0.030" YTarget="0.0" Acc="5" Vel="0.2" EndVel="0.2" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="9">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="0.025" YTarget="0.0" Acc="5" Vel="0.2" EndVel="0.2" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="10">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="-0.020" YTarget="0.0" Acc="5" Vel="0.2" EndVel="0.2" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="11">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="0.015" YTarget="0.0" Acc="5" Vel="0.2" EndVel="0.1" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="12">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="-0.010" YTarget="0.0" Acc="5" Vel="0.1" EndVel="0.1" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="13">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="0.005" YTarget="0.0" Acc="5" Vel="0.1" EndVel="0.1" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+    <!-- 4th Swirl Movement-->
+    <Command id="14">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="0.005" YTarget="0.0" Acc="5" Vel="0.05" EndVel="0.05" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="15">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="-0.010" YTarget="0.0" Acc="5" Vel="0.05" EndVel="0.1" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="16">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="0.015" YTarget="0.0" Acc="5" Vel="0.1" EndVel="0.1" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="17">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="-0.020" YTarget="0.0" Acc="5" Vel="0.1" EndVel="0.2" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="18">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="0.025" YTarget="0.0" Acc="5" Vel="0.2" EndVel="0.2" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="19">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="-0.030" YTarget="0.0" Acc="5" Vel="0.2" EndVel="0.2" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="20">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="0.030" YTarget="0.0" Acc="5" Vel="0.2" EndVel="0.2" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="21">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="-0.030" YTarget="0.0" Acc="5" Vel="0.2" EndVel="0.2" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="22">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="0.025" YTarget="0.0" Acc="5" Vel="0.2" EndVel="0.2" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="23">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="-0.020" YTarget="0.0" Acc="5" Vel="0.2" EndVel="0.2" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="24">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="0.015" YTarget="0.0" Acc="5" Vel="0.2" EndVel="0.1" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="25">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="-0.010" YTarget="0.0" Acc="5" Vel="0.1" EndVel="0.1" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+	<Command id="26">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="0.005" YTarget="0.0" Acc="5" Vel="0.1" EndVel="0.0" PositionMode="1" Angle="3.1415" Direction="1"/>
+	</Command>
+    <Command id="27">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="-0.0005" YTarget="-0.0005" Acc="15" Vel="0.125" EndVel="0.125" PositionMode="1" Angle="62.8318" Direction="1"/>
+	</Command>
+    <!--Vibin-->
+    <Command id="28">
+		<Parameter Name="MoveArcAngle" ShuttleID="131" XTarget="-0.0003" YTarget="-0.0003" Acc="15" Vel="0.105" EndVel="0.105" PositionMode="1" Angle="62.8318" Direction="1"/>
+	</Command>    
+    <Command id="29">
+		<Parameter Name="WaitTime" ShuttleID="131" TimeDelay="4"/>
+	</Command>
+	<Command id="30">
+		<Parameter Name="MacroSave" MacroID="131"/>
+	</Command>
+</Commands>
