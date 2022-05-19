@@ -14,10 +14,10 @@
     <Parameter ID="PasswordService" Value="" />
   </Module>
   <Module Name="8YFLM01.0000.00I-1" Type="8YFLM01.0000.00I-1" Version="0.0.0.1">
-    <Connection Connector="PLK1" TargetModule="X20CP1685" TargetConnector="IF3" NodeNumber="101">
+    <Connection Connector="PLK1" TargetModule="X20CP1685" TargetConnector="IF3" NodeNumber="1">
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
-    <Connection Connector="PLK2" TargetModule="8YFLM01.0000.00I-1a" TargetConnector="PLK1" NodeNumber="101">
+    <Connection Connector="PLK2" TargetModule="8YFLM01.0000.00I-1a" TargetConnector="PLK1" NodeNumber="1">
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
     <Parameter ID="Supervision" Value="off" />
@@ -47,6 +47,7 @@
     </Connector>
     <Parameter ID="ConfigurationID" Value="OnsiteDemo_1685" />
     <Parameter ID="UserPartitionSize" Value="10" />
+    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="TimerDeviceType" Value="EPLX2X" />
     <Parameter ID="TimerDevice" Value="X20CP1685.IF3" />
     <Parameter ID="Cyclic1Duration" Value="1000" />
